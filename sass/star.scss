@@ -1,4 +1,4 @@
-@import "compass"
+@import compass
 
 
 // n is number of stars required
@@ -23,7 +23,7 @@ html
   height: 1px
   background: transparent
   box-shadow: $shadows-small
-  animation			: animStar 150s linear infinite
+  animation     : animStar 150s linear infinite
     
   &:after
     content: " "
@@ -35,27 +35,27 @@ html
     box-shadow: $shadows-small
     
 #stars2
-  width: 2px
-  height: 2px
+  width: 1.5px
+  height: 1.5px
   background: transparent
   box-shadow: $shadows-medium
-  animation			: animStar 100s linear infinite
+  animation     : animStar 100s linear infinite
     
   &:after
     content: " "
     position: absolute
     top: 2000px
-    width: 2px
-    height: 2px
+    width: 1.5px
+    height: 1.5px
     background: transparent
     box-shadow: $shadows-medium
     
 #stars3
-  width: 3px
-  height: 3px
+  width: 2px
+  height: 2px
   background: transparent
   box-shadow: $shadows-big
-  animation			: animStar 50s linear infinite
+  animation     : animStar 50s linear infinite
     
   &:after
     content: " "
@@ -88,8 +88,8 @@ html
     -webkit-text-fill-color: transparent
     
 @keyframes animStar
-  from	
+  from  
     transform: translateY(0px)
-  to		
+  to    
     transform: translateY(-2000px)
     
