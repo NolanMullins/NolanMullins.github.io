@@ -28,7 +28,8 @@ hr {
 }
 
 a {
-    color: #0AF0FC;
+    /*color: #0AF0FC;*/
+    color: #FEBE3E;
 }
 
 .navbar-custom .nav{
