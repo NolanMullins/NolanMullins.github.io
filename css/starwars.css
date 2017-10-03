@@ -1,0 +1,35 @@
+/*@font-face {
+    font-family: "My Custom Font";
+    src: url(fonts/starwars/Starjedi.ttf) format("truetype");
+}*/
+
+@font-face{
+    font-family: "starwars";
+    src: url(../fonts/starwars/Star_Jedi_Rounded.ttf) format("truetype");
+}
+
+p { 
+    font-family: "starwars", Verdana, Tahoma;
+    color: #FEBE3E;
+}
+
+h2 {
+    font-family: "starwars", Verdana, Tahoma;
+    color: #FEBE3E;
+}
+
+hr {
+    font-family: "starwars", Verdana, Tahoma;
+    color: #FEBE3E;
+}
+
+.navbar-custom .nav{
+  font-family: "starwars", Verdana, Tahoma;
+}
+
+
+/* Colors
+ * #FEBE3E
+ * #0AF0FC
+ * #072342
+ */
