@@ -32,9 +32,45 @@ a {
     color: #FEBE3E;
 }
 
-.navbar-custom .nav{
-  font-family: "starwars", Verdana, Tahoma;
+.navbar-brand {
+
 }
+
+.navbar-custom .nav{
+  /*font-family: "starwars", Verdana, Tahoma;*/
+}
+
+.navbar-custom .nav li.active a {
+  background-color: white;
+  color: black;
+  outline-color: black;
+}
+
+.navbar-custom .nav li::selection {
+  color: black;
+}
+
+::selection {
+    color: #166dcd; 
+}
+
+a:hover { 
+    color: #166dcd;
+}
+
+.navbar-custom .nav li a:hover {
+  color: #166dcd;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #FEBE3E;
+    margin: 1em 0;
+    padding: 0; 
+}
+
 
 
 /* Colors
