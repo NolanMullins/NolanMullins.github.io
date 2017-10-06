@@ -4,12 +4,14 @@ const CANVAS = document.getElementsByTagName("canvas")[0],
 	H = window.innerHeight,
 	XO = W / 2,
 	YO = H / 2,
-	NUM_PARTICLES = 650,
-	MAX_Z = 2,
-	MAX_R = 1,
-	PARTICLES = [];
+	NUM_PARTICLES = 400,
+	MAX_Z = 1.25,
+	MAX_R = 2,
+	PARTICLES = [],
+	JMP_SPEED = 2,
+	FLY_SPEED = 0.1;
 
-var Z_SPD = 0.1,
+var Z_SPD = FLY_SPEED,
 	jumping = false;
 
 class Particle {
@@ -19,7 +21,7 @@ class Particle {
 		var Z_VEL = -Z_SPD;
 		this.vel = new Vector(X_VEL, Y_VEL, Z_VEL);
 		this.vel.scale(0.01);
-		this.fill = "rgba(255,255,255,255)";
+		this.fill = "rgba(147, 188, 255, 255)";
 		this.stroke = this.fill;
 	}
 
@@ -75,7 +77,7 @@ class Vector {
 }
 
 function jump() {
-	Z_SPD = 2;
+	Z_SPD = JMP_SPEED;
 	jumping = true;
 	for (let i = 0; i < PARTICLES.length; i++) {
 		PARTICLES[i].updateVel();
@@ -83,7 +85,7 @@ function jump() {
 }
 
 function stop() {
-	Z_SPD = 0.1;
+	Z_SPD = FLY_SPEED;
 	jumping = false;
 	for (let i = 0; i < PARTICLES.length; i++) {
 		PARTICLES[i].updateVel();
