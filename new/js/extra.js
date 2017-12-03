@@ -10,11 +10,11 @@ $(".scroll-menu li a[href^='#']").on('click', function(e) {
     // The grabs the height of my header
     var navOffset;
     navOffset = $('#header').height();
-
+    console.log("nav " + navOffset);
     // Animate The Scroll
     $('html, body').animate({
         scrollTop: $(this.hash).offset().top - navOffset
-    }, 600, function(){
+    }, 800, function(){
 
     // Adds hash to end of URL
     return window.history.pushState(null, null, target);
