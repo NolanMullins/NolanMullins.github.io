@@ -7,6 +7,14 @@ p.center {
     text-align: center;
 }
 
+.blur {
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+        -webkit-filter: url(#blur-filter);
+        filter: url(#blur-filter);
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+    }
+
 /*@font-face{
     font-family: "starwars";
     src: url(../fonts/starwars/Death Star.otf) format("truetype");
