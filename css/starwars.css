@@ -59,7 +59,7 @@ a {
 }
 
 .navbar-custom .nav li.active a {
-  background-color: white;
+  background-color: rgb(150,150,150);
   color: black;
   outline-color: black;
 }
