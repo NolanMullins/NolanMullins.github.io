@@ -15,6 +15,14 @@ p.center {
         filter: blur(5px);
     }
 
+.title {
+  height: 100px; width: 100%; background-color: rgba(210, 210, 210, 0.1); border-radius:5px;
+}
+
+.content-title {
+  margin-top:-100px; position: relative; height: 100px; width:100%; margin-bottom: 30px; line-height: 100px;
+}
+
 /*@font-face{
     font-family: "starwars";
     src: url(../fonts/starwars/Death Star.otf) format("truetype");
