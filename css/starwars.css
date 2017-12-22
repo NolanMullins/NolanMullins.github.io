@@ -23,6 +23,18 @@ p.center {
   margin-top:-100px; position: relative; height: 100px; width:100%; margin-bottom: 30px; line-height: 100px;
 }
 
+.quad {
+  height: 50vh;
+}
+
+.content-section {
+  padding-top: 75px;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 /*@font-face{
     font-family: "starwars";
     src: url(../fonts/starwars/Death Star.otf) format("truetype");
