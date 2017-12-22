@@ -29,7 +29,7 @@ p.center {
 }
 
 .quad {
-  height: 50vh;
+  min-height: 20vh;
 }
 
 .content-section {
