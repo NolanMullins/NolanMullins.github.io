@@ -198,21 +198,6 @@
     min-height: 30px;
 }
 
-@media (min-width: 600px) {
-  #list-drop {
-      display: none;
-      visibility: hidden;
-  }
-
-  #list-block {
-      display: inline-flex;
-      visibility: visible;
-  }
-  .border {
-    visibility: visible;
-  }
-}
-
 .center-on-page {
   position: absolute;
   top: 50%;
@@ -275,4 +260,25 @@ select::-ms-expand {
   -webkit-transition: .25s all ease;
   -o-transition: .25s all ease;
   transition: .25s all ease;
+}
+
+@media (min-width: 920px) {
+  #list-drop {
+      display: none;
+      visibility: hidden;
+  }
+
+  #list-block {
+      display: inline-flex;
+      visibility: visible;
+  }
+  .border {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 767px) {
+    .tabs {
+        width: 85vw;
+    }
 }
