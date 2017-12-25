@@ -1,4 +1,4 @@
-function changeTabDrop(e) {
+function changeTabDrop() {
     var getTabId = $('#list-drop').val();
     // Remove Active State
     $('.tab').stop().fadeOut(300, function () {
@@ -26,6 +26,10 @@ function animateTabHeight() {
   }
 
 $(document).ready(function () {
+
+  $('#list-drop').change(function() {
+      changeTabDrop();
+  });
 
   // Intial Border Position
   var activePos = $('.tabs-header .active').position();
