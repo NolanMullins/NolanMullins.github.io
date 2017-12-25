@@ -1,6 +1,29 @@
 function changeTabDrop(e) {
-      console.log(e);
+    var getTabId = $('#list-drop').val();
+    // Remove Active State
+    $('.tab').stop().fadeOut(300, function () {
+        // Remove Class
+        $(this).removeClass('active');
+    }).hide();
+
+    $('.tab[tab-id=' + getTabId + ']').stop().fadeIn(300, function () {
+      // Add Class
+      $(this).addClass('active');
+
+      // Animate Height
+      animateTabHeight();
+    });
 }
+
+function animateTabHeight() {
+
+    // Update Tab Height
+    tabHeight = $('.tab.active').height();
+    // Animate Height
+    $('.tabs-content').stop().css({
+      height: (tabHeight +30) + 'px'
+    });
+  }
 
 $(document).ready(function () {
 
