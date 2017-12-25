@@ -1,3 +1,7 @@
+function changeTabDrop(e) {
+      console.log(e);
+}
+
 $(document).ready(function () {
 
   // Intial Border Position
@@ -53,6 +57,8 @@ $(document).ready(function () {
       animateTabHeight();
     });
   }
+
+
 
   // Tabs
   $('.tabs-header a').on('click', function (e) {

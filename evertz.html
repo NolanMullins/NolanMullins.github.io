@@ -81,16 +81,23 @@
 
         </div>-->
 
-        <div class="tabs">
-          <div class="tabs-header">
+        <div class="tabs" style="">
+          <div class="tabs-header" style="">
             <div class="border"></div>
-            <ul style="margin-bottom: 0px">
-              <li class="active"><a href="#tab-1" tab-id="1" ripple="ripple" ripple-color="#FFF">Tab 1</a></li>
-              <li><a href="#tab-2" tab-id="2" ripple="ripple" ripple-color="#FFF">Tab 2</a></li>
-              <li><a href="#tab-3" tab-id="3" ripple="ripple" ripple-color="#FFF">Tab 3</a></li>
-              <li><a href="#tab-4" tab-id="4" ripple="ripple" ripple-color="#FFF">Tab 4</a></li>
-              <li><a href="#tab-5" tab-id="5" ripple="ripple" ripple-color="#FFF">Tab 5</a></li>
+            <ul id="list-block" style="margin-bottom: 0px">
+              <li class="active"><a href="#tab-about" tab-id="about" ripple="ripple" ripple-color="#FFF">About</a></li>
+              <li><a href="#tab-job" tab-id="job" ripple="ripple" ripple-color="#FFF">My Job</a></li>
+              <li><a href="#tab-goals" tab-id="goals" ripple="ripple" ripple-color="#FFF">Goals</a></li>
+              <li><a href="#tab-exp" tab-id="exp" ripple="ripple" ripple-color="#FFF">Experience</a></li>
+              <li><a href="#tab-conclusion" tab-id="conclusion" ripple="ripple" ripple-color="#FFF">Conclusion</a></li>
             </ul>
+            <select id="list-drop" onchange="changeTabDrop(this)">
+                <option value="about">About</option>
+                <option value="job">My Job</option>
+                <option value="goals">Goals</option>
+                <option value="exp">Experience</option>
+                <option value="coclusion">Conclusion</option>
+            </select>
             <nav class="tabs-nav">
                 <i class="material-icons" id="prev" ripple="ripple" ripple-color="#FFF" style="margin-right: 5px;">
                     <i class="fa fa-chevron-left" aria-hidden="true"></i>
@@ -101,11 +108,11 @@
             </nav>
           </div>
           <div class="tabs-content">
-            <div class="tab active" tab-id="1">Sample text 1</div>
-            <div class="tab" tab-id="2">Sample text 2</div>
-            <div class="tab" tab-id="3">Sample text 3</div>
-            <div class="tab" tab-id="4">Sample text 4</div>
-            <div class="tab" tab-id="5">
+            <div class="tab active" tab-id="about">Sample text 1</div>
+            <div class="tab" tab-id="job">Sample text 2</div>
+            <div class="tab" tab-id="goals">Sample text 3</div>
+            <div class="tab" tab-id="exp">Sample text 4</div>
+            <div class="tab" tab-id="conclusion">
                     Sample text 5, this is a lot of text!<br/>
                     Sample text 5, this is a lot of text!<br/>
                     Sample text 5, this is a lot of text!<br/>
