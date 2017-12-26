@@ -23,7 +23,17 @@ function animateTabHeight() {
     $('.tabs-content').stop().css({
       height: (tabHeight +30) + 'px'
     });
+    setOverflow();
   }
+
+function setOverflow() {
+    var newHeight = $('.tab.active').height() + $('#tabs-header').height() +30;
+    newHeight += parseInt($('#tabs').css('marginTop')) + parseInt($('#tabs').css('marginBottom'));
+    if (newHeight < $(window).height())
+        $("#page-top").css("overflow", "hidden");
+    else 
+        $("#page-top").css("overflow", "visible");
+}
 
 $(document).ready(function () {
 
@@ -62,6 +72,7 @@ $(document).ready(function () {
     $('.tabs-content').stop().css({
       height: (tabHeight +30) + 'px'
     });
+    setOverflow();
   }
 
   animateTabHeight();

@@ -39,11 +39,13 @@
     opacity: 0;
   }
 }
+
 .tabs {
   z-index: 15px;
   position: relative;
   background: #FFFFFF;
   width: 60vw;
+  margin-bottom: 75px;
   border-radius: 4px;
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
@@ -282,5 +284,11 @@ select::-ms-expand {
 @media (max-width: 767px) {
     .tabs {
         width: 85vw;
+        margin-top: 75px;
     }
+}
+
+p {
+    font-size: 14px;
+    text-align: left; 
 }
