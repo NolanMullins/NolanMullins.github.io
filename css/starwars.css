@@ -9,6 +9,10 @@ p.center {
     text-align: center;
 }
 
+.content-row {
+    padding: 25px 50px 50px 50px;
+}
+
 .blur {
   filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
   -webkit-filter: url(#blur-filter);
@@ -47,7 +51,7 @@ p.center {
 }
 
 .content-section {
-  padding-top: 75px;
+  padding-top: 25px;
 }
 .row {
   margin-left: 0px;
