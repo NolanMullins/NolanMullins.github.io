@@ -19,6 +19,7 @@
 	<link href="css/grayscale2.css" rel="stylesheet">
     <link href="css/space.css" rel="stylesheet">
     <link href="css/starwars.css" rel="stylesheet">
+    <link href="css/graph.css" rel="stylesheet">
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.js"></script>
 
@@ -31,6 +32,7 @@
     
     <!-- JavaScript -->
     <script src="js/grayscale.min.js"></script>
+
 </head>
 
 <div id='mars' style="display: block;"></div>
@@ -114,20 +116,6 @@
                         </div>
                     </div>
                     <div class="quad col-lg-6 col-lg-offset-0" style="">
-                        <h2>Skills</h2>
-                        <div class="text-left">
-                            <p class="center">
-                                C, C#, Java, Python<br>
-                                Html, CSS, Angular 2+<br>
-                                SQL, 68K assembly, batch script <br>
-                                Git, SVN<br>
-                                Standard First Aid (CPR C)<br><br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row" style="padding: 50px;">
-                    <div class="quad col-lg-6 col-lg-offset-0" style="">
                         <h2>Interests</h2>
                         <div class="text-left">
                             <p class="center">
@@ -138,8 +126,87 @@
                             </p>
                         </div>
                     </div>
-                    <div class="quad col-lg-6 col-lg-offset-0" style="">
-                        <h2>Projects</h2>
+                </div>
+                <div class="row" style="padding: 50px;">
+                    <div class="quad col-lg-6 col-lg-offset-0" style="overflow:auto; overflow-x: hidden;">
+                        <div class="skills">
+                            <div id="c" class="row progress-row" style="">
+                                <div class="col-sm-2 progress-head" style="">
+                                    C
+                                </div>
+                                <div class="col-sm-10" style="">
+                                    <div id="" class="progress-bottom">
+                                        <div class="progress">
+                                            <div class="c progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="java" class="row progress-row" style="">
+                                <div class="col-sm-2 progress-head" style="">
+                                    Java
+                                </div>
+                                <div class="col-sm-10" style="">
+                                    <div id="" class="progress-bottom">
+                                        <div class="progress">
+                                            <div class="java progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="css" class="row progress-row" style="">
+                                <div class="col-sm-2 progress-head" style="">
+                                    CSS
+                                </div>
+                                <div class="col-sm-10" style="">
+                                    <div id="" class="progress-bottom">
+                                        <div class="progress">
+                                            <div class="css progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="c-sharp" class="row progress-row" style="">
+                                <div class="col-sm-2 progress-head" style="">
+                                    C#
+                                </div>
+                                <div class="col-sm-10" style="">
+                                    <div id="" class="progress-bottom">
+                                        <div class="progress">
+                                            <div class="c-sharp progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="python" class="row progress-row" style="">
+                                <div class="col-sm-2 progress-head" style="">
+                                    Python
+                                </div>
+                                <div class="col-sm-10" style="">
+                                    <div id="" class="progress-bottom">
+                                        <div class="progress">
+                                            <div class="python progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quad col-lg-6 col-lg-offset-0" style="overflow:auto;">
+                        <div class="text-left">
+                            <p class="center">
+                                Other fun stuff I've worked with<br><br>
+                                Angular 2+, javascript<br>
+                                SQL, 68K assembly, batch script <br>
+                                Git, SVN<br>
+                                Standard First Aid (CPR C)<br><br>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -325,6 +392,11 @@ function resize() {
 
 $( document ).ready(function() {
     resize();
+    $('.c').css('width', '100%');
+    $('.java').css('width', '100%');
+    $('.css').css('width', '90%');
+    $('.c-sharp').css('width', '85%');
+    $('.python').css('width', '75%');
 }); 
 
 $(window).on('resize', function(){

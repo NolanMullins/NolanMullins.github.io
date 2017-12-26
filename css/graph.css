@@ -1,0 +1,40 @@
+
+.skills {
+	float: left;
+	clear: right;
+	width: 500px;
+	margin: 5px 0px 30px 30px;
+}
+
+.progress-row {
+	padding-left: 50px;
+	padding-right: 50px;
+	height: 20px;
+}
+
+.progress-head {
+	clear: right;
+	text-align: left;
+	font-weight: 600;
+	line-height: 20px;
+}
+
+.progress-bottom {
+	float: left;
+	clear: right;
+	width: 100%;
+}
+
+.progress {
+	padding: 0px;
+}
+
+
+
+.c, .java, .css, .c-sharp, .python, .bootstrap, .wordpress, .ui, .ux, .rwd, .mobile, .rapidproto {
+
+ -webkit-transition: width 4.50s ease !important;
+ -moz-transition: width 4.50s ease !important;
+   -o-transition: width 4.50s ease !important;
+      transition: width 4.50s ease !important;
+ }
