@@ -33,6 +33,7 @@ function setOverflow() {
         $("#page-top").css("overflow", "hidden");
     else 
         $("#page-top").css("overflow", "visible");
+    window.scrollTo(0, 0);
 }
 
 $(document).ready(function () {
