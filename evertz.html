@@ -52,7 +52,7 @@
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <span id="evertz-header" class="light" style="padding-top:15px; padding-bottom: 15px; float:left;">Evertz Microsystems</span>
+                <span id="evertz-header" class="light" style="padding: 15px; float:left;">Evertz Microsystems</span>
                 <button type="button" class="navbar-toggle" onclick="goHome()">
                     Home
                 </button>
@@ -118,7 +118,31 @@
                   Visit <a href="https://evertz.com"> evertz.com</a> for more information 
                 </p>
             </div>
-            <div class="tab" tab-id="job">Sample text 2</div>
+            <div class="tab" tab-id="job">
+                <p style="margin-bottom: 5px;">
+                <img src="img/vlpro.jpg" style="float: right; border-radius: 4px; margin-left: 10px; min-width: 150px;" alt="" class="left" width="40%">
+                &nbsp;&nbsp;&nbsp;&nbsp;During my eight months as a student design engineer I worked on various projects such as <a href="http://evertz.com/solutions/vistalink">VistaLINK PRO</a> (VLPro), internal web tools, and some new products. VLPro is Java based wich allowed me to gain more experience in the language and learn a few tricks from my team lead. My first tasks were mainly debugging issues reported by customers and engineers as I become more familar with the software I moved on to adding features such as graphing cababilities and custom web frames. Adding the graphing support allowed for real time data analytics, I worked with an engineering team to support their hardware along with a product team to build the component to their needs. Another major project I worked on was a new Web Based product. This was written in Angular 2+ and allowed me to branch off into a new area of development where I didn't have much experience. The last project I worked on was a license management tool allowing customers to better control the licenses running on their hardware. <br/><br/>
+
+                The languages / frameworks I used at Evertz
+                    <ul style="text-align: left">
+                        <li>
+                            Java 8
+                        </li>
+                        <li>
+                            Java Server Pages
+                        </li>
+                        <li>
+                            Spring Framework
+                        </li>
+                        <li>
+                            HTML / CSS
+                        </li>
+                        <li>
+                            Angular 2+ 
+                        </li>
+                    </ul>
+                </p>
+            </div>
             <div class="tab" tab-id="goals">Sample text 3</div>
             <div class="tab" tab-id="exp">Sample text 4</div>
             <div class="tab" tab-id="conclusion">
@@ -172,6 +196,6 @@
     });
 
     function goHome() {
-        window.location = "index.html";
+        window.location = "./";
     }
 </script>
