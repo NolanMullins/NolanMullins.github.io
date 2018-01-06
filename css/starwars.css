@@ -72,6 +72,9 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid slategrey;
 }
 
+.rotate90 {
+}
+
 /*@font-face{
     font-family: "starwars";
     src: url(../fonts/starwars/Death Star.otf) format("truetype");
