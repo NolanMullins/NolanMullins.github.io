@@ -64,11 +64,11 @@ body::-webkit-scrollbar {
  
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    background: #888;
+    background: #333;
 }
  
 body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
+  background-color: #aaa;
   outline: 1px solid slategrey;
 }
 
