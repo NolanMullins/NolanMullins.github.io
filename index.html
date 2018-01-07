@@ -137,7 +137,7 @@
                                 <div class="col-xs-10 col-bar" style="">
                                     <div id="" class="progress-bottom">
                                         <div class="progress">
-                                            <div class="c progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+                                            <div class="c progress-bar progress-bar-info" role="progressbar" style="">
                                             </div>
                                         </div>
                                     </div>
@@ -150,7 +150,7 @@
                                 <div class="col-xs-10 col-bar" style="">
                                     <div id="" class="progress-bottom">
                                         <div class="progress">
-                                            <div class="java progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+                                            <div class="java progress-bar progress-bar-info" role="progressbar" style="">
                                             </div>
                                         </div>
                                     </div>
@@ -163,7 +163,7 @@
                                 <div class="col-xs-10 col-bar" style="">
                                     <div id="" class="progress-bottom">
                                         <div class="progress">
-                                            <div class="css progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+                                            <div class="css progress-bar progress-bar-info" role="progressbar" style="">
                                             </div>
                                         </div>
                                     </div>
@@ -176,7 +176,7 @@
                                 <div class="col-xs-10 col-bar" style="">
                                     <div id="" class="progress-bottom">
                                         <div class="progress">
-                                            <div class="c-sharp progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+                                            <div class="c-sharp progress-bar progress-bar-info" role="progressbar" style="">
                                             </div>
                                         </div>
                                     </div>
@@ -189,7 +189,7 @@
                                 <div class="col-xs-10 col-bar" style="">
                                     <div id="" class="progress-bottom">
                                         <div class="progress">
-                                            <div class="python progress-bar progress-bar-info" role="progressbar" style="width: 0%">
+                                            <div class="python progress-bar progress-bar-info" role="progressbar" style="">
                                             </div>
                                         </div>
                                     </div>
@@ -392,15 +392,39 @@ function resize() {
 
 $( document ).ready(function() {
     resize();
-    $('.c').css('width', '100%');
-    $('.java').css('width', '100%');
-    $('.css').css('width', '90%');
-    $('.c-sharp').css('width', '85%');
-    $('.python').css('width', '75%');
+    
+    check_if_in_view();
 }); 
 
 $(window).on('resize', function(){
       resize();
 });
+
+window.onscroll = function() {
+    console.log('scrolling');
+    check_if_in_view();
+};
+
+function check_if_in_view() {
+    var $animation_elements = $('.c, .java, .css, .c-sharp, .python');
+    var window_height = $(window).height();
+    var window_top_position = $(window).scrollTop();
+    var window_bottom_position = (window_top_position + window_height);
+
+    $.each($animation_elements, function() {
+      var $element = $(this);
+      var element_height = $element.outerHeight();
+      var element_top_position = $element.offset().top;
+      var element_bottom_position = (element_top_position + element_height);
+
+      //check to see if this current container is within viewport
+      if ((element_bottom_position >= window_top_position) &&
+          (element_top_position <= window_bottom_position)) {
+        $element.addClass('in-view');
+      } else if(element_top_position >= window_bottom_position){
+        $element.removeClass('in-view');
+      }
+    });
+}
 
 </script>

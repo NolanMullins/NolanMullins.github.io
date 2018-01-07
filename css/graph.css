@@ -32,12 +32,30 @@
 	padding: 0px;
 }
 
+.c, .java, .css, .c-sharp, .python {
+
+}
+
+.c.in-view {
+	width: 100%;
+}
+.java.in-view {
+	width: 100%;
+}
+.css.in-view {
+	width: 90%;
+}
+.c-sharp.in-view {
+	width: 85%;
+}
+.python.in-view {
+	width: 75%;
+}
 
 
-.c, .java, .css, .c-sharp, .python, .bootstrap, .wordpress, .ui, .ux, .rwd, .mobile, .rapidproto {
-
- -webkit-transition: width 4.50s ease !important;
- -moz-transition: width 4.50s ease !important;
-   -o-transition: width 4.50s ease !important;
-      transition: width 4.50s ease !important;
+.in-view {
+    -webkit-transition: width 4.50s ease !important;
+    -moz-transition: width 4.50s ease !important;
+    -o-transition: width 4.50s ease !important;
+    transition: width 4.50s ease !important;
  }
