@@ -9,8 +9,20 @@ p.center {
     text-align: center;
 }
 
+.link {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
 .content-row {
-    padding: 25px 50px 50px 50px;
+    padding: 25px 50px 25px 50px;
 }
 
 .blur {
