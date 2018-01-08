@@ -154,31 +154,42 @@ hr {
 }
 
 .social {
-  margin: 0 auto;
-  padding: 0; }
+    margin: 0 auto;
+    padding: 0; 
+}
 
 .social li {
-  display: inline-block; }
+    display: inline-block; 
+}
 
 .social li a {
-  display: block;
-  width: 2.2rem;
-  height: 2.2rem;
-  margin: .4rem .1rem;
-  text-align: center;
-  text-decoration: none;
-  background: #fff;
-  color: #696b6e;
-  border: 0.1rem solid #dfe1e5;
-  border-radius: 499rem;
-  line-height: 1.5;
-  font-size: 1.4rem;
-  }
+    display: block;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: .4rem .1rem;
+    text-align: center;
+    text-decoration: none;
+    background: #fff;
+    color: #696b6e;
+    border: 0.1rem solid #dfe1e5;
+    border-radius: 499rem;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
 
+/*#59a0d7*/
 .social li a:hover {
-  color: #59a0d7;
-  border-color: #59a0d7; }
+    color: #145BA8;
+    border-color: #145BA8; 
+} 
 
+.email {
+  color: white
+}
+
+a:hover {
+  color: #145BA8;
+}
 
 
 /* Colors
