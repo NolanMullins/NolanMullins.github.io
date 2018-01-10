@@ -18,11 +18,25 @@ p.center {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display:         flex;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .content-row {
-    padding: 25px 50px 25px 50px;
+    padding: 25px 10px 25px 10px;
+}
+
+html {
+    font-size: 15px;
+}
+
+@media(min-width: 900px) {
+    .content-row {
+      padding: 25px 50px 25px 50px;
+    }
+    html {
+        font-size: 21px;
+    }
 }
 
 .blur {
