@@ -54,8 +54,8 @@
 
 
 .in-view {
-    -webkit-transition: width 4.50s ease !important;
-    -moz-transition: width 4.50s ease !important;
-    -o-transition: width 4.50s ease !important;
-    transition: width 4.50s ease !important;
+    -webkit-transition: width 3.0s ease !important;
+    -moz-transition: width 3.0s ease !important;
+    -o-transition: width 3.00s ease !important;
+    transition: width 3.00s ease !important;
  }
