@@ -377,12 +377,13 @@ function resizeXP() {
 function resize() {
     resizeAbout();
     resizeXP();
-    setTimeout(resizeXP(), 5000)
 }
 
 $( document ).ready(function() {
     resize();
-    
+    setTimeout(function() {
+        resizeXP()
+    }, 5000);
     check_if_in_view();
 }); 
 
