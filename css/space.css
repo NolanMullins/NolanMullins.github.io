@@ -27,3 +27,59 @@ body {
   overflow: hidden;
   background-color: #424a54;
 }
+
+.txt-header {
+  float: left;
+  margin-bottom: 0px;
+}
+
+.img-left {
+  float: left; 
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.img-right {
+  float: right;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.vim {
+  min-width: 50px; 
+  max-width: 175px; 
+  padding-right: 20px;
+  margin-top: -10px;
+}
+
+.sass {
+  min-width: 100px;
+  margin-top:-50px;
+  width: 20%;
+}
+
+.evertz-bld {
+  min-width: 150px;
+  width: 40%;
+}
+
+@media only screen and (max-width: 600px) {
+  .vim {
+    width: 30%;
+    padding-right: 10px;
+    margin-top: 0px;
+  }
+
+  .sass {
+    min-width: 50px;
+    margin-top: 0px;
+    width: 30%;
+  }
+
+  .evertz-bld {
+    min-width: 150px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+
