@@ -27,6 +27,7 @@ $textColor: rgba(255,255,255,0.75);*/
   -webkit-clip-path: url("#clip-diamond-demo");
           clip-path: url("#clip-diamond-demo");
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .overlay {
