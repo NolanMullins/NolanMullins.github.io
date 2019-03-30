@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="css/core.css" />
+        <link rel="stylesheet" type="text/css" href="css/sass/grid.css" />
+        <link rel="stylesheet" type="text/css" href="css/sass/glass.css" />
+        <link rel="stylesheet" type="text/css" href="css/dots.css" />
+        <link rel="stylesheet" type="text/css" href="css/sass/star.css" />
+        <title>Ma Boom Box</title>
+    </head>
+    <body>
+        <!-- stars -->
+        <svg class="svg-star-view" style="opacity: 0" viewBox="0 0 800 600" preserveAspectRatio="xMinYMid slice">
+            <g id="stars">
+                <line x1="1185" y1="-15" x2="77.5" y2="1092.5"></line>
+                <line x1="854" y1="8" x2="163" y2="699"></line>
+                <line x1="573" y1="-33" x2="-49.5" y2="589.5"></line>
+                <line x1="271" y1="-33" x2="-60.5" y2="298.5"></line>
+                <line x1="463" y1="-76" x2="-102" y2="489"></line>
+                <line x1="120" y1="-19" x2="-26" y2="127"></line>
+                <line x1="866" y1="174.3" x2="305.6" y2="734.7"></line>
+                <line x1="854" y1="462" x2="653" y2="663"></line>
+            </g>
+        </svg>
+
+        <div class="music-info-root center">
+            <div class="music-info-container glass blurred-bg">
+                <div class="music-info center" style="flex-direction: column;">
+                    <span>The Winner Takes it all </span>
+                    <div style="width: 50%; height: 0.05em; background-color: rgba(255,255,255,0.5);"></div>
+                    <span>Abba</span>
+                </div>
+            </div>
+        </div>
+        <div class="control-grid center">
+            <div class="img-clip-block">
+                <div class="img-clip-row">
+                    <div class="img-clip-wrap glass blurred-bg tinted">
+                        <div class="overlay">
+                            <div class="overlay-content">Random</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="img-clip-row">
+                    <a class="img-clip-wrap glass blurred-bg tinted">
+                        <div class="overlay">
+                            <div class="overlay-content">prev</div>
+                        </div>
+                    </a>
+
+                    <a class="img-clip-wrap glass blurred-bg tinted">
+                        <div class="overlay">
+                            <div class="overlay-content">next</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="img-clip-row">
+                    <a class="img-clip-wrap polygon-clip-rhombus glass blurred-bg tinted">
+                        <div class="overlay">
+                            <div class="overlay-content">play</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-bar flex-apart">
+            <div class="title-container">
+                <span class="title">Boom box</span>
+            </div>
+            <ul class="nav">
+                <div class="kebab">
+                    <figure></figure>
+                    <figure class="middle"></figure>
+                    <p class="cross">x</p>
+                    <figure></figure>
+                    <ul class="m-dropdown">
+                        <li><a>2000's</a></li>
+                        <li><a>TSwift</a></li>
+                        <li><a>Backstreet boys</a></li>
+                        <li><a>Pop</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+        <!-- /img-clip-block -->
+        <svg class="clip-svg">
+            <defs>
+                <clipPath id="clip-diamond-demo" clipPathUnits="objectBoundingBox">
+                    <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
+                </clipPath>
+            </defs>
+        </svg>
+    </body>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/dots.js"></script>
+    <script src="js/star.js"></script>
+</html>

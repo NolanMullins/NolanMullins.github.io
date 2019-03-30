@@ -1,0 +1,79 @@
+.svg-star-view {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+#stars line {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.4);
+  stroke-width: 0.5;
+  stroke-dasharray: 150980;
+  stroke-dashoffset: 150;
+  -webkit-animation: cometFall 10s ease-out infinite;
+          animation: cometFall 10s ease-out infinite;
+}
+
+@-webkit-keyframes cometFall {
+  5%, 100% {
+    stroke-dashoffset: -980;
+  }
+}
+
+@keyframes cometFall {
+  5%, 100% {
+    stroke-dashoffset: -980;
+  }
+}
+
+#stars line:nth-child(1) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+
+#stars line:nth-child(2) {
+  -webkit-animation-delay: 5.5s;
+          animation-delay: 5.5s;
+}
+
+#stars line:nth-child(3) {
+  -webkit-animation-delay: 5.8s;
+          animation-delay: 5.8s;
+}
+
+#stars line:nth-child(4) {
+  -webkit-animation-delay: 1.9s;
+          animation-delay: 1.9s;
+}
+
+#stars line:nth-child(5) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+#stars line:nth-child(6) {
+  -webkit-animation-delay: 3.7s;
+          animation-delay: 3.7s;
+}
+
+#stars line:nth-child(7) {
+  -webkit-animation-delay: 3.1s;
+          animation-delay: 3.1s;
+}
+
+#stars line:nth-child(8) {
+  -webkit-animation-delay: 3.1s;
+          animation-delay: 3.1s;
+}
+
+#stars line:nth-child(9) {
+  -webkit-animation-delay: 3.1s;
+          animation-delay: 3.1s;
+}
+
+#stars line:nth-child(10) {
+  -webkit-animation-delay: 1.1s;
+          animation-delay: 1.1s;
+}
+/*# sourceMappingURL=star.css.map */
