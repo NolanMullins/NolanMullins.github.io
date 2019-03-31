@@ -7,7 +7,7 @@
 
 * 
 {
-    font-family: AquaFont, sans-serif !important;
+    font-family: AquaFont, sans-serif;
     font-size: 1vh;
     font-weight: 300;
 }
@@ -94,6 +94,14 @@ body
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+.footer
+{
+    width: 100vw;
+    height: 6%;
+    bottom: 0px; 
+    position: absolute;
 }
 
 @media (min-aspect-ratio: 1001/1000) 
