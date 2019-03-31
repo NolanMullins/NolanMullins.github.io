@@ -20,11 +20,12 @@
 }
 
 .blurred-bg {
-  background-image: url("../../img/space-small-blur.jpg");
+  background: url("../../img/space-small-blur.jpg") no-repeat center center fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
+  background-size: cover;
 }
 
 .blurred-bg.tinted {
@@ -35,5 +36,11 @@
 .blurred-bg.shaded {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../../img/space-small-blur.jpg");
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../img/space-small-blur.jpg");
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .widget-wrap {
+    background-attachment: scroll;
+  }
 }
 /*# sourceMappingURL=glass.css.map */
