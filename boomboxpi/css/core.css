@@ -15,7 +15,7 @@
 body 
 {
     background-color: #333;
-    background: url("../img/space.jpg") no-repeat center center fixed;
+    background: url("../img/space-small.jpg") no-repeat center center fixed;
     background-position: center;
     background-size: cover;
     width: 100vw;
