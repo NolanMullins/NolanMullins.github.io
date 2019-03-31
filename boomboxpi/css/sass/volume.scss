@@ -1,36 +1,31 @@
 $primaryColor: #257694;
-$secondaryColor: rgba(0,0,0,0.8);
+$secondaryColor: rgba(0, 0, 0, 0.8);
 $trackHeight: 0.2rem;
 $thumbSize: 1rem;
 
-.lock
-{
+.lock {
     position: absolute;
     top: 50%;
     right: 0px;
     padding-right: 2rem;
     transform: translateY(-1rem);
 
-    i
-    {
-      font-size: 2rem;
-      color: $secondaryColor
-    }
-}
-
-.vol-low,
-.vol-high
-{
-    margin: 1vh;
-    i 
-    {
+    i {
         font-size: 2rem;
         color: $secondaryColor;
     }
 }
 
-.vol-slider
-{
+.vol-low,
+.vol-high {
+    margin: 1vh;
+    i {
+        font-size: 2rem;
+        color: $secondaryColor;
+    }
+}
+
+.vol-slider {
     width: 50vw;
     height: 0px;
     margin: 0px;
@@ -39,63 +34,89 @@ $thumbSize: 1rem;
 }
 
 .range {
-  -webkit-appearance: none;
-  outline: none;
-  -moz-apperance: none;
-  line-height: 0;
-  padding: 0;
-
-  &:focus {
-    outline: none;
-  }
-  
-  // Chrome
-  &::-webkit-slider-runnable-track {
-    animate: 0.2s;
-    background: $secondaryColor;
-    cursor: pointer;
-    height: $trackHeight;
-    margin-top: 0;
-    width: 100%;
-  }
-
-  &::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background-color: $primaryColor;
-    border-radius: 50%;
-    //border: 1px;
-    cursor: pointer;
-    height: $thumbSize;
-    transform: translateY(-0.4rem);
-    width: $thumbSize;
-  }
+    outline: none;
+    -moz-apperance: none;
+    line-height: 0;
+    padding: 0;
 
-  &:focus::-webkit-slider-runnable-track {
-  }
+    &:focus {
+        outline: none;
+    }
 
-  // Firefox
-  &::-moz-range-track {
-    animate: 0.2s;
-    background: $secondaryColor;
-    cursor: pointer;
-    height: $trackHeight;
-    width: 100%;
-  }
+    // Chrome
+    &::-webkit-slider-runnable-track {
+        animate: 0.2s;
+        background: $secondaryColor;
+        cursor: pointer;
+        height: $trackHeight;
+        margin-top: 0;
+        width: 100%;
+    }
 
-  &::-moz-range-thumb {
-    background-color: $primaryColor;
-    border-radius: 50%;
-    //border: 6px solid white;
-    cursor: pointer;
-    height: $thumbSize;
-    width: $thumbSize;
-  }
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        background-color: $primaryColor;
+        border-radius: 50%;
+        //border: 1px;
+        cursor: pointer;
+        height: $thumbSize;
+        transform: translateY(-0.4rem);
+        width: $thumbSize;
+    }
 
-  &:focus::-ms-fill-lower {
-    border: 1px solid $secondaryColor;
-  }
+    &:focus::-webkit-slider-runnable-track {
+    }
 
-  &:focus::-ms-fill-upper {
-    border: 1px solid $secondaryColor;
-  }
+    // Firefox
+    &::-moz-range-track {
+        animate: 0.2s;
+        background: $secondaryColor;
+        cursor: pointer;
+        height: $trackHeight;
+        width: 100%;
+    }
+
+    &::-moz-range-thumb {
+        background-color: $primaryColor;
+        border-radius: 50%;
+        //border: 6px solid white;
+        cursor: pointer;
+        height: $thumbSize;
+        width: $thumbSize;
+    }
+
+    &:focus::-ms-fill-lower {
+        border: 1px solid $secondaryColor;
+    }
+
+    &:focus::-ms-fill-upper {
+        border: 1px solid $secondaryColor;
+    }
+}
+
+@media (min-aspect-ratio: 1001/1000) {
+    .lock {
+        padding-right: 1rem;
+        transform: translateY(-0.5rem);
+        i {
+            font-size: 1rem;
+            color: $secondaryColor;
+        }
+    }
+
+    .vol-low,
+    .vol-high {
+        i {
+            font-size: 1rem;
+        }
+    }
+
+    // Chrome
+    .range::-webkit-slider-runnable-track {
+        height: $trackHeight/2;
+    }
+    .range::-moz-range-track {
+        height: $trackHeight/2;
+    }
 }

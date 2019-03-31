@@ -84,4 +84,26 @@
 .range:focus::-ms-fill-upper {
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
+
+@media (min-aspect-ratio: 1001 / 1000) {
+  .lock {
+    padding-right: 1rem;
+    -webkit-transform: translateY(-0.5rem);
+            transform: translateY(-0.5rem);
+  }
+  .lock i {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .vol-low i,
+  .vol-high i {
+    font-size: 1rem;
+  }
+  .range::-webkit-slider-runnable-track {
+    height: 0.1rem;
+  }
+  .range::-moz-range-track {
+    height: 0.1rem;
+  }
+}
 /*# sourceMappingURL=volume.css.map */
