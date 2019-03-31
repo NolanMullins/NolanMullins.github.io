@@ -1,0 +1,87 @@
+.lock {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  padding-right: 2rem;
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.lock i {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.vol-low,
+.vol-high {
+  margin: 1vh;
+}
+
+.vol-low i,
+.vol-high i {
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.vol-slider {
+  width: 50vw;
+  height: 0px;
+  margin: 0px;
+}
+
+.range {
+  -webkit-appearance: none;
+  outline: none;
+  -moz-apperance: none;
+  line-height: 0;
+  padding: 0;
+}
+
+.range:focus {
+  outline: none;
+}
+
+.range::-webkit-slider-runnable-track {
+  animate: 0.2s;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  height: 0.2rem;
+  margin-top: 0;
+  width: 100%;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #257694;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1rem;
+  -webkit-transform: translateY(-0.4rem);
+          transform: translateY(-0.4rem);
+  width: 1rem;
+}
+
+.range::-moz-range-track {
+  animate: 0.2s;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  height: 0.2rem;
+  width: 100%;
+}
+
+.range::-moz-range-thumb {
+  background-color: #257694;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+}
+
+.range:focus::-ms-fill-lower {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+.range:focus::-ms-fill-upper {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+/*# sourceMappingURL=volume.css.map */
