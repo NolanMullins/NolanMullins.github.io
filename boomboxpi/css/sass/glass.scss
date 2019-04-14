@@ -41,8 +41,14 @@ $blurred-img: "../../img/space-small-blur.jpg";
     }
 }
 
-@supports (-webkit-overflow-scrolling: touch) {
-    .widget-wrap {
-        background-attachment: scroll;
+@media (max-aspect-ratio: 1000/1000) { 
+    .blurred-bg {
+        background: rgba(0,0,0,0.1);
+        &.tinted {
+            background-image: none;
+        }
+        &.shaded {
+            background-image: none;
+        }
     }
 }

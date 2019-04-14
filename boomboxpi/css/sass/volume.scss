@@ -1,7 +1,7 @@
 $primaryColor: #257694;
 $secondaryColor: rgba(0, 0, 0, 0.8);
 $trackHeight: 0.2rem;
-$thumbSize: 1rem;
+$thumbSize: 1.25rem;
 
 .lock {
     position: absolute;
@@ -61,7 +61,8 @@ $thumbSize: 1rem;
         //border: 1px;
         cursor: pointer;
         height: $thumbSize;
-        transform: translateY(-0.4rem);
+        margin-top: -.5rem;
+        //transform: translateY(-0.55rem);
         width: $thumbSize;
     }
 
@@ -98,9 +99,9 @@ $thumbSize: 1rem;
 @media (min-aspect-ratio: 1001/1000) {
     .lock {
         padding-right: 1rem;
-        transform: translateY(-0.5rem);
+        transform: translateY(-0.75rem);
         i {
-            font-size: 1rem;
+            font-size: 1.5rem;
             color: $secondaryColor;
         }
     }
@@ -108,7 +109,7 @@ $thumbSize: 1rem;
     .vol-low,
     .vol-high {
         i {
-            font-size: 1rem;
+            font-size: 1.5rem;
         }
     }
 

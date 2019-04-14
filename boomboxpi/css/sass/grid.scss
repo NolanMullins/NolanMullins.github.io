@@ -1,5 +1,6 @@
 $size: 15vw;
 $mobileSize: 40vw;
+$ipadSize: 30vw;
 /*$overlayBGColour: rgba(171, 147, 116, 0.8);
 $textColor: rgba(255,255,255,0.75);*/
 $overlayBGColour: rgba(255,255,255, 0.65);
@@ -68,8 +69,8 @@ $textColor: rgba(0,0,0,0.5);
 }
 
 .img-clip-wrap:hover .overlay {
-    -webkit-transition: all 0.4s ease-in;
-    transition: all 0.4s ease-in;
+    -webkit-transition: all 0.05s ease-in;
+    transition: all 0.05s ease-in;
     background: none;
 }
 
@@ -89,7 +90,34 @@ $textColor: rgba(0,0,0,0.5);
     display: inline-block;
 }
 
-@media only screen and (max-aspect-ratio: 1000/1000)
+@media only screen and (max-aspect-ratio: 100/100)
+{
+    .img-clip-wrap 
+    {
+        width: $ipadSize;
+        height: $ipadSize
+    }
+
+    .img-clip-row {
+        margin-top: -$ipadSize/2;
+    }
+
+    .img-clip-wrap:hover .overlay {
+        -webkit-transition: none;
+        transition: none;
+        background: $overlayBGColour;
+        border: 0px solid rgba(0,0,0,0);
+    }
+
+    .img-clip-wrap:active .overlay {
+        -webkit-transition: all 0.05s ease-in-out;
+        transition: all 0.05s ease-in-out;
+        background: none;
+        border: 0.5vh solid rgba(255,255,255,0.5);
+    }
+}
+
+@media only screen and (max-aspect-ratio: 70/100)
 {
     .img-clip-wrap 
     {
@@ -100,16 +128,6 @@ $textColor: rgba(0,0,0,0.5);
     .img-clip-row {
         margin-top: -$mobileSize/2;
     }
-
-    .img-clip-wrap:hover .overlay {
-        -webkit-transition: none;
-        transition: none;
-        background: $overlayBGColour;
-    }
-
-    .img-clip-wrap:active .overlay {
-        -webkit-transition: all 0.1s ease-in;
-        transition: all 0.1s ease-in;
-        background: none;
-    }
 }
+
+

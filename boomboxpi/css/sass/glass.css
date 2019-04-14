@@ -38,9 +38,15 @@
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../img/space-small-blur.jpg");
 }
 
-@supports (-webkit-overflow-scrolling: touch) {
-  .widget-wrap {
-    background-attachment: scroll;
+@media (max-aspect-ratio: 1000 / 1000) {
+  .blurred-bg {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .blurred-bg.tinted {
+    background-image: none;
+  }
+  .blurred-bg.shaded {
+    background-image: none;
   }
 }
 /*# sourceMappingURL=glass.css.map */

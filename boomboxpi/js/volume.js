@@ -1,7 +1,9 @@
 var locked = false;
+var prevVol = 50;
 
 $(document).ready(function() {
     document.getElementById('volume').oninput = function(){
+        prevVol = this.value;
         setVolume(this.value);
     }
     $('#lock-icon').click(function() {
@@ -17,6 +19,16 @@ $(document).ready(function() {
         }
         locked = !locked;
         updateLock(locked);
+    });
+    
+    $('.vol-low').click(function() {
+        document.getElementById('volume').value = 0;
+        setVolume(0);
+    });
+
+    $('.vol-high').click(function() {
+        document.getElementById('volume').value = prevVol;
+        setVolume(prevVol);
     });
 });
 

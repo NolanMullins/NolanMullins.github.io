@@ -46,31 +46,31 @@
                 </div>
 
                 <div class="img-clip-row">
-                    <a class="img-clip-wrap glass blurred-bg tinted">
+                    <div class="img-clip-wrap glass blurred-bg tinted">
                         <div class="overlay">
                             <div class="overlay-content unselectable">prev</div>
                         </div>
-                    </a>
+                    </div>
 
-                    <a class="img-clip-wrap glass blurred-bg tinted">
+                    <div class="img-clip-wrap glass blurred-bg tinted">
                         <div class="overlay">
                             <div class="overlay-content unselectable">next</div>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
                 <div class="img-clip-row">
-                    <a class="img-clip-wrap polygon-clip-rhombus glass blurred-bg tinted">
+                    <div class="img-clip-wrap polygon-clip-rhombus glass blurred-bg tinted">
                         <div class="overlay">
                             <div class="overlay-content unselectable">play</div>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="nav-bar flex-apart">
             <div class="title-container">
-                <span class="title">Boom box</span>
+                <span class="title unselectable">Boom box</span>
             </div>
             <!--TODO move to bottom bar maybe-->
             <ul class="nav">
@@ -118,4 +118,11 @@
     <script src="js/dots.js"></script>
     <script src="js/star.js"></script>
     <script src="js/volume.js"></script>
+    <script>
+        window.oncontextmenu = function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            return false;
+        };
+    </script>
 </html>
