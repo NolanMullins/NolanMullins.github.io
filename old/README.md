@@ -1,2 +1,0 @@
-# NolanMullins.github.io
-website

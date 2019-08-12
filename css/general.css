@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+}
+
+.home, .about {
+  background: #d1ae86;
+  background: radial-gradient(ellipse at center, #d1ae86 0%, #d1ae86 49%, #b59672 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1ae86', endColorstr='#b59672', GradientType=1 );
+}
+/*# sourceMappingURL=general.css.map */

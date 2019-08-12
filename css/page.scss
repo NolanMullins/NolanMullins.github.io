@@ -1,0 +1,162 @@
+// Define animations
+// The key will be used as class name (and keyframe name)
+// Exmaple class: .page--fromTop
+// The value is a map, it defines the "from" and the "to" animation
+$animations: (
+    fromTop: (
+        from: (
+            transform: translateY(-100%) scale(.8)
+        ),
+        to: (
+            transform: translateY(0) scale(1)
+        )
+    ),
+    toTop: (
+        from: (),
+        to: (
+            transform: translateY(-100%) scale(.8)
+        )
+    ),
+    fromBottom: (
+        from: (
+            transform: translateY(100%) scale(.8)
+        ),
+        to: (
+            transform: translateY(0) scale(1)
+        )
+    ),
+    toBottom: (
+        from: (),
+        to: (
+            transform: translateY(100%) scale(.8)
+        )
+    ),
+    fromLeft: (
+        from: (
+            transform: translateX(-100%) scale(.8)
+        ),
+        to: (
+            transform: translateX(0) scale(1)
+        )
+    ),
+    toLeft: (
+        from: (),
+        to: (
+            transform: translateX(-100%) scale(.8)
+        )
+    ),
+    fromRight: (
+        from: (
+            transform: translateX(100%) scale(.8)
+        ),
+        to: (
+            transform: translateX(0) scale(1)
+        )
+    ),
+    toRight: (
+        from: (),
+        to: (
+            transform: translateX(100%) scale(.8)
+        )
+    ),
+);
+
+html, body {
+    widht: 100%;
+    height: 100%;
+}
+
+.arrows {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10000;
+    user-select: none;
+}
+
+.arrow {
+    display: inline-block;
+    font-size: 30px;
+    line-height: 40px;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+    padding: 0 10px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.container {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #0f0f0f;
+    overflow: hidden;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    
+    /*&:nth-of-type(1) {
+        background-color: #f44336;
+    }
+    &:nth-of-type(2) {
+        background-color: #009688;
+    }
+    &:nth-of-type(3) {
+        background-color: #03a9f4;
+    }
+    &:nth-of-type(4) {
+        background-color: #009688;
+    }*/
+    
+    &--current {
+        visibility: visible;
+        z-index: 1;
+    }
+    
+    @each $animationName, $animationProperties in $animations {
+        $fromAnimations: map-get($animationProperties, "from");
+        
+        &--animation-#{$animationName} {
+            @each $property, $value in $fromAnimations {
+                #{$property}: $value;
+            }
+            
+            &--animate {
+                animation: page-#{$animationName} .5s ease both;
+            }
+        }
+    }
+    
+    p {
+        font-size: 50px;
+        font-family: Arial;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+        top: 50%;
+        margin-top: -25px;
+        position: absolute;
+        color: #fff;
+        width: 100%;
+    }
+}
+
+// Generate keyframes for page animations
+@each $animationName, $animationProperties in $animations {
+    $toAnimations: map-get($animationProperties, "to");
+    
+    @keyframes page-#{$animationName} {
+        to {
+            @each $property, $value in $toAnimations {
+                #{$property}: $value;
+            }
+        }
+    }
+}

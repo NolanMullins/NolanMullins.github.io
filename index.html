@@ -2,419 +2,53 @@
 <html lang="en" style="">
 
 <head>
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Personal Website" content="">
-    <meta name="Nolan Mullins" content="">
-
-    
-	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">    
-
-	<!-- Custom CSS -->
-	<link href="css/star.css" rel="stylesheet">
-	<link href="css/grayscale2.css" rel="stylesheet">
-    <link href="css/space.css" rel="stylesheet">
-    <link href="css/starwars.css" rel="stylesheet">
-    <link href="css/graph.css" rel="stylesheet">
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/jquery/jquery-2.2.4.min.js"></script>
+    <script src="vendor/modernizr/modernizr.min.js"></script>
+    <script src="js/page.js"></script>
 
-    <!-- Bootstrap -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>    
-    
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    
-    <!-- JavaScript -->
-    <script src="js/grayscale.min.js"></script>
+    <link href="css/page.css" rel="stylesheet">
+    <link href="css/polaroid.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
 
 </head>
 
-<div id='mars' style="display: block;"></div>
-<div id='stars' style="display: block;"></div>
-<div id='stars2' style="display: block;"></div>
-<div id='stars3' style="display: block;"></div>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="http://github.com/NolanMullins">
-                <i class="fa fa-github" aria-hidden="true"></i>
-                    <span class="light" style="float:right;margin-left:5px">Github</span>
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#exp">Experience</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Intro Header -->
-    <header class="intro" style="height: 100vh;">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Nolan Mullins</h1>
-                        <p style="color: #FFF" class="intro-text">University of Guelph, Computer Science</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
+<body>
+    <div class="container">
+        <div id="polaroid" class="page home" data-transition="fromTop">
+            <div class="polaroid-container">
+                <figure>
+                    <div class="img" style="background-image: url('img/kandersteg.jpg');"></div>
+                    <figcaption>About me</figcaption>
+                </figure>
+                <figure style>
+                    <div class="img" style="background-image: url('img/kandersteg.jpg');"></div>
+                    <figcaption>About me</figcaption>
+                </figure>
+                <figure>
+                    <div class="img" style="background-image: url('img/kandersteg.jpg');"></div>
+                    <figcaption>About me</figcaption>
+                </figure>
+                <figure>
+                    <div class="img" style="background-image: url('img/kandersteg.jpg');"></div>
+                    <figcaption>About me</figcaption>
+                </figure>
+                <figure>
+                    <div class="img" style="background-image: url('img/kandersteg.jpg');"></div>
+                    <figcaption>About me</figcaption>
+                </figure>
             </div>
         </div>
-    </header>
-
-    <div class="content">
-
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center" style="padding-top: 100px;">
-        <div class="row">
-            <div class="blur title" style=""></div>
-            <div class="content-title" style="">About</div>
-
-            <div id="about-blur" class="blur blur-content-section" style=""></div>
-            <div id="about-content" class="content-section" style="">
-                <div class="row content-row" style="padding-bottom: 20px;">
-                    <div class="quad col-lg-6 col-lg-offset-0" style="">
-                        <h2>Education</h2>
-                        <div class="text-left">
-                            <p class="center">
-                                University of Guelph (Sept 2015 – present)<br>
-                                Bachelor of Computing, Computer Science (Co-op)<br>
-                                Minor Bachelor of Science (MATH)<br><br>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="quad col-lg-6 col-lg-offset-0" style="">
-                        <h2>Interests</h2>
-                        <div class="text-left">
-                            <p class="center">
-                                Building mobile apps <a href="http://play.google.com/store/apps/details?id=com.NolanM.RocketGame">(my current project)</a><br>
-                                Running, Hockey<br>
-                                3D Printing<br>
-                                I kinda like star wars<br><br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row content-row" style="">
-                    <div class="quad col-md-6" style="overflow:auto; overflow-x: hidden;">
-                        <div class="skills">
-                            <div id="c" class="row progress-row" style="">
-                                <div class="col-xs-2 progress-head" style="">
-                                    C
-                                </div>
-                                <div class="col-xs-10 col-bar" style="">
-                                    <div id="" class="progress-bottom">
-                                        <div class="progress">
-                                            <div class="c progress-bar progress-bar-info" role="progressbar" style="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="java" class="row progress-row" style="">
-                                <div class="col-xs-2 progress-head" style="">
-                                    Java
-                                </div>
-                                <div class="col-xs-10 col-bar" style="">
-                                    <div id="" class="progress-bottom">
-                                        <div class="progress">
-                                            <div class="java progress-bar progress-bar-info" role="progressbar" style="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="css" class="row progress-row" style="">
-                                <div class="col-xs-2 progress-head" style="">
-                                    CSS
-                                </div>
-                                <div class="col-xs-10 col-bar" style="">
-                                    <div id="" class="progress-bottom">
-                                        <div class="progress">
-                                            <div class="css progress-bar progress-bar-info" role="progressbar" style="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="c-sharp" class="row progress-row" style="">
-                                <div class="col-xs-2 progress-head" style="">
-                                    C#
-                                </div>
-                                <div class="col-xs-10 col-bar" style="">
-                                    <div id="" class="progress-bottom">
-                                        <div class="progress">
-                                            <div class="c-sharp progress-bar progress-bar-info" role="progressbar" style="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="python" class="row progress-row" style="">
-                                <div class="col-xs-2 progress-head" style="">
-                                    Python
-                                </div>
-                                <div class="col-xs-10 col-bar" style="">
-                                    <div id="" class="progress-bottom">
-                                        <div class="progress">
-                                            <div class="python progress-bar progress-bar-info" role="progressbar" style="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="quad col-md-6" style="overflow:auto;">
-                        <div class="text-left">
-                            <p class="center">
-                                Other fun stuff I've worked with<br><br>
-                                Angular 2+, javascript<br>
-                                SQL, 68K assembly, batch script <br>
-                                Git, SVN<br>
-                                Standard First Aid (CPR C)<br><br>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="exp" class="container content-section text-center" style="padding-top: 100px;">
-        <div class="row">
-            <div class="blur title" style=""></div>
-            <div class="content-title" style="">Experience</div>
-
-            <div id="xp-blur" class="blur blur-content-section" style=""></div>
-            <div id="xp-content" class="content-section" style="">
-                <div class="row content-row row-eq-height" style="">
-                    <div class="quad col-lg-6 col-lg-offset-0" style="">
-                        <h2><a href="./evertz">Evertz Microsystems</a></h2>
-                        <div class="text-left">
-                            <p class="center">
-                                I worked as a student design engineer with the VistaLINK PRO team. 
-                                <br><br>
-                                <img src="img/admin-bld.jpg" style="border-radius: 4px; width: 80%; margin-bottom: 15px;" alt="" class="left" width="40%">
-                            </p>
-                            <p class="center" style="margin-bottom: 15px;position: absolute;bottom: 0; width: calc(100% - 30px);">
-                                <a href="./evertz">
-                                    <b class="link" style="padding-bottom: 2px;">
-                                        more
-                                    </b>
-                                    <i class="fa fa-angle-double-right link" style=""></i>
-                                </a>
-                            </p>    
-                        </div>
-                    </div>
-                    <div class="quad col-lg-6 col-lg-offset-0" style="">
-                        <h2 ><a href="http://www.dgisupply.ca">DGI Supply</a></h2>
-                        <div class="text-left">
-                            <p class="center">
-                                While an IT Analyst at DGI I was responsible for training employees and new hires in systems and software.
-                                I also designed automated reports and key performance indicators which reduced the workload of my coworkers. Some of my other projects were to automate repetitive tasks and create a SQL platform to standardize pricing between the company, clients, and vendors in order to minimize costs.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-    </section>
-
     
-
-    <!-- About Section -->
-    <!--<section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About.<hr></h2>
-                <div class="text-left">
-                    <h2 style="margin:0px"><b>Education</b></h2>  
-                    <div style="padding-left:3em">
-                        <p>
-                            &bull; University of Guelph<br></b>
-                            &bull; Major: B.Comp. Computer Science<br>
-                            &bull; Minor: B.Sc. Math
-                        <br>
-                        </p>
-                    </div>
-                    <h2 style="margin:0px"><b>Skills</b></h2>  
-                    <div style="padding-left:3em">
-                        <p>
-                            &bull; Java, C#, C, Python, 68k assembly, SQL, PHP, HTML / CSS <br></b>
-                            &bull; Windows, Linux<br>
-                            &bull; 
-                        <br>
-                        </p>
-                    </div>
-                    <h2 style="margin:0px"><b>Projects</b></h2>  
-                    <div style="padding-left:3em">
-                        <p>
-                            &bull; //TODO <br></b>
-                            &bull; <br>
-                            &bull; 
-                        <br>
-                        </p>
-                    </div>
-                    <br><br><br><br><br><br><br><br>
-                    
-                </div>
-            </div>
+        <div class="page about" data-transition="fromTop">
+            <p>#2</p>
         </div>
-    </section>-->
-
-    <!-- Coop Section -->
-    <!--<section id="coop" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Co-op.<hr></h2>
-            </div>
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-sm-6 img-responsive img-center"><img src="img/exeServerCrop.jpg" style="max-width:100%;min-width:50px" /></div>
-                    <div class="col-sm-6 img-responsive img-center"><img src="img/evertz.jpg" style="display: block;max-width:100%;min-width:50px" /></div>
-                </div>
-            </div>
-            <div class="col-lg-10 col-lg-offset-1">
-                <br>
-                <p> <font size="5"><b>Evertz Microsystems</b></font> </p>
-                <p> Evertz Microsystems (TSX:ET) is a leading global manufacturer of broadcast equipment and solutions that deliver content to television sets, on-demand services, WebTV, IPTV, and mobile devices (like phones and tablets). Evertz has expertise in delivering complete end-to-end broadcast solutions for all aspects of broadcast production including content creation, content distribution and content delivery. </p>
-            </div>
-            <div class="col-lg-12">
-                <div class="row">
-                    <div class="col-sm-6 img-responsive img-center">
-                        <br>
-                        <p> <font size="5"><b>Evertz Microsystems - 1</b></font> </p>
-                        <p> Evertz Microsystems (TSX:ET) is a leading global manufacturer of broadcast equipment and solutions that deliver content to television sets, on-demand services, WebTV, IPTV, and mobile devices (like phones and tablets). Evertz has expertise in delivering complete end-to-end broadcast solutions for all aspects of broadcast production including content creation, content distribution and content delivery. </p>
-                    </div>
-                    <div class="col-sm-6 img-responsive img-center">
-                        <br>
-                        <p> <font size="5"><b>Evertz Microsystems - 2</b></font> </p>
-                        <p> Evertz Microsystems (TSX:ET) is a leading global manufacturer of broadcast equipment and solutions that deliver content to television sets, on-demand services, WebTV, IPTV, and mobile devices (like phones and tablets). Evertz has expertise in delivering complete end-to-end broadcast solutions for all aspects of broadcast production including content creation, content distribution and content delivery. </p>
-                    </div>
-                </div>
-            </div>
+        
+        <div class="arrows">
+            <p class="arrow arrow--left" onclick="prev()">&#8610;</p>
+            <p class="arrow arrow--right" onclick="next()">&#8611;</p>
         </div>
-    </section>-->
-
-    <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-12">
-                <hr style="margin-bottom: 15px;">
-                <div class="row">
-                    <div class="col-md-6" style="font-size:1.5rem; line-height: 50px;">
-                        <a class="email" href="mailto:nolan.mullins@me.com" style="">nolan.mullins@me.com</a>
-                    </div>
-                    <div class="col-md-6" style="font-size:1.5rem; line-height: 50px;">
-                        <ul class="social">
-                            <li><a href="https://www.facebook.com/nolan.mullins.97" title="Facebook" class="fa fa-facebook"></a></li>
-                            <li><a href="https://www.instagram.com/nolan.mullins/" title="Instagram" class="fa fa-instagram"></a></li>
-                            <li><a href="https://www.linkedin.com/in/nolanmullins/" title="linkedin" class="fa fa-linkedin"></a></li>
-                            <li><a href="https://github.com/NolanMullins" title="Github" class="fa fa-github"></a></li>
-                            <li><a href="https://www.thingiverse.com/deerslug/about" title="Thingiverse" class="fa fa-cube"></a></li>   
-                            <div class="clear"></div>
-                        </ul>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-
-    </section>
+        
     </div>
 </body>
 </html>
-
-<script>
-
-function resizeAbout() {
-    var height = $("#about-content").outerHeight();
-    $("#about-blur").css("height", height+"px");
-    $("#about-content").css("margin-top", (-height)+"px");
-}
-
-function resizeXP() {
-    var height = $("#xp-content").outerHeight();
-    $("#xp-blur").css("height", height+"px");
-    $("#xp-content").css("margin-top", (-height)+"px");
-}
-
-function resize() {
-    resizeAbout();
-    resizeXP();
-}
-
-$( document ).ready(function() {
-    resize();
-    setTimeout(function() {
-        resizeXP()
-    }, 5000);
-    check_if_in_view();
-}); 
-
-$(window).on('resize', function(){
-      resize();
-});
-
-window.onscroll = function() {
-    check_if_in_view();
-};
-
-function check_if_in_view() {
-    var $animation_elements = $('.c, .java, .css, .c-sharp, .python');
-    var window_height = $(window).height();
-    var window_top_position = $(window).scrollTop();
-    var window_bottom_position = (window_top_position + window_height);
-
-    $.each($animation_elements, function() {
-      var $element = $(this);
-      var element_height = $element.outerHeight();
-      var element_top_position = $element.offset().top;
-      var element_bottom_position = (element_top_position + element_height);
-
-      //check to see if this current container is within viewport
-      if ((element_bottom_position >= window_top_position) &&
-          (element_top_position <= window_bottom_position)) {
-        $element.addClass('in-view');
-      } else if(element_top_position >= window_bottom_position){
-        $element.removeClass('in-view');
-      }
-    });
-}
-
-</script>
