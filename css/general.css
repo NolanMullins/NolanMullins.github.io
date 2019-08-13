@@ -16,7 +16,7 @@ body {
   background: radial-gradient(ellipse at center, #AA8D6D, #856D53);
 }
 
-.header {
+.nolan {
   width: 20%;
   height: 25%;
   top: -25%;
@@ -28,7 +28,7 @@ body {
 }
 
 @media (max-aspect-ratio: 1 / 1) {
-  .header {
+  .nolan {
     width: 35%;
     height: 5%;
     top: -5%;
