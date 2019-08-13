@@ -15,4 +15,24 @@ body {
   background: #AA8D6D;
   background: radial-gradient(ellipse at center, #AA8D6D, #856D53);
 }
+
+.header {
+  width: 20%;
+  height: 25%;
+  top: -25%;
+  left: 1%;
+  position: relative;
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+  .header {
+    width: 35%;
+    height: 5%;
+    top: -5%;
+    left: 2%;
+  }
+}
 /*# sourceMappingURL=general.css.map */

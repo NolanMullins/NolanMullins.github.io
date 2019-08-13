@@ -48,45 +48,40 @@ figcaption {
     padding-bottom: $mobileCardHeight;
   }
 }
-#polaroid figure:hover {
-  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.05);
-  transition: all 0.2s ease-in-out;
-  //transform: scale(1.02);
-}
 
 @for $i from 1 through length($cardRotations) {
   #polaroid {
-  figure:nth-child(#{$i}) {
-    top: nth($cardTop, $i);
-    -webkit-transform: rotate(nth($cardRotations, $i));
-    -moz-transform: rotate(nth($cardRotations, $i));
-    -o-transform: rotate(nth($cardRotations, $i));
-    -ms-transform: rotate(nth($cardRotations, $i));
-    transform: rotate(nth($cardRotations, $i));
-    -webkit-backface-visibility: hidden; /*prevent rotated text being jagged in Chrome and Safari*/
-    -webkit-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.75);
-    box-shadow: -4px 4px 8px -4px rgba(0, 0, 0, 0.75);
-  }
-  //Tape
-  figure:nth-child(#{$i}):before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: nth($tapeLeft, $i);
-    top: nth($tapeTop, $i);
-    width: nth($tapeWidth, $i);
-    height: $tapeThicc;
-    background-color: rgba(222, 220, 198, 0.85);
-    -webkit-transform: rotate(nth($tapeRotation, $i));
-    -moz-transform: rotate(nth($tapeRotation, $i));
-    -o-transform: rotate(nth($tapeRotation, $i));
-    -ms-transform: rotate(nth($tapeRotation, $i));
-  }
-  figure:nth-child(#{$i}):hover {
-    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.05);
-    transition: all 0.2s ease-in-out;
-  }
+    figure:nth-child(#{$i}) {
+      top: nth($cardTop, $i);
+      -webkit-transform: rotate(nth($cardRotations, $i));
+      -moz-transform: rotate(nth($cardRotations, $i));
+      -o-transform: rotate(nth($cardRotations, $i));
+      -ms-transform: rotate(nth($cardRotations, $i));
+      transform: rotate(nth($cardRotations, $i));
+      -webkit-backface-visibility: hidden; /*prevent rotated text being jagged in Chrome and Safari*/
+      -webkit-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.75);
+      box-shadow: -4px 4px 8px -4px rgba(0, 0, 0, 0.75);
+    }
+    //Tape
+    figure:nth-child(#{$i}):before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: nth($tapeLeft, $i);
+      top: nth($tapeTop, $i);
+      width: nth($tapeWidth, $i);
+      height: $tapeThicc;
+      background-color: rgba(222, 220, 198, 0.85);
+      -webkit-transform: rotate(nth($tapeRotation, $i));
+      -moz-transform: rotate(nth($tapeRotation, $i));
+      -o-transform: rotate(nth($tapeRotation, $i));
+      -ms-transform: rotate(nth($tapeRotation, $i));
+    }
+    figure:nth-child(#{$i}):hover {
+      box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.1);
+      transition: all 0.2s ease-in-out;
+    }
   }
 }
 
