@@ -5,12 +5,13 @@ $cardHeight: 17%;
 $mobileCardWidth: 35%;
 $mobileCardHeight: 42%;
 
-$cardRotations: 3deg, 0deg, 8deg, -2deg;
-$cardTop: -5%, 0%, 1%, -2%;
-$tapeLeft: 50px, 200px, -20px, 100px;
-$tapeTop: -15px, 0px, 0px, 15px;
-$tapeRotation: -1deg, 45deg, -22deg, 12deg;
-$tapeWidth: 75px, 100px, 160px, 75px;
+$cardRotations: 3deg, 0deg, 8deg, -2deg, 1deg;
+$cardTop: -5%, -7%, 1%, -2%, 4%;
+$tapeLeft: 30%, 75%, -15%, 35%, 30%;
+$tapeTop: -5%, 0px, 0px, -8%, -5%;
+$tapeRotation: -1deg, 45deg, -22deg, 90deg, 10deg;
+$tapeWidth: 30%, 40%, 63%, 32%, 40%;
+$tapeThicc: 10%;
 
 figure,
 figcaption {
@@ -75,7 +76,7 @@ figcaption {
     left: nth($tapeLeft, $i);
     top: nth($tapeTop, $i);
     width: nth($tapeWidth, $i);
-    height: 25px;
+    height: $tapeThicc;
     background-color: rgba(222, 220, 198, 0.85);
     -webkit-transform: rotate(nth($tapeRotation, $i));
     -moz-transform: rotate(nth($tapeRotation, $i));

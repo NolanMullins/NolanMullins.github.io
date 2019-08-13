@@ -65,7 +65,6 @@ var pageTransition = {
     
     next: function() {      
         if(!this.getNextPage()) {
-            console.log("No next page");
             return false;
         }
         
@@ -84,6 +83,24 @@ var pageTransition = {
         this.transitionPageOut(this.getCurrentPage(), this.transitions[this.getCurrentPage().transitionName].reverse);
         this.transitionPageIn(this.getPreviousPage(), this.transitions[this.getCurrentPage().transitionName].oppositeIn);
         this.currentPageIndex--;
+    },
+
+    gotoPage: function(index) {
+        if (!this.pages[index]) {
+            return false;
+        }
+        this.transitionPageOut(this.getCurrentPage(), this.transitions[this.getNextPage().transitionName].oppositeOut);
+        this.transitionPageIn(this.pages[index], this.pages[index].transitionName);
+        this.currentPageIndex = index;
+    },
+
+    goBackPage: function(index) {
+        if (!this.pages[index]) {
+            return false;
+        }
+        this.transitionPageOut(this.getCurrentPage(), this.transitions[this.getCurrentPage().transitionName].reverse);
+        this.transitionPageIn(this.pages[index], this.transitions[this.pages[index].transitionName].oppositeIn);
+        this.currentPageIndex = index;
     },
     
     transitionPageIn: function(page, pageTransitionName) {
@@ -137,3 +154,13 @@ $(document).ready(function() {
         pageTransition.next();
     });
 });
+
+function gotoPage(index)
+{
+    pageTransition.gotoPage(index);
+}
+
+function goHome() 
+{
+    pageTransition.goBackPage(0);
+}
