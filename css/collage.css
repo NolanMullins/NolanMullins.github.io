@@ -1,0 +1,8 @@
+.pics figure::before, .pics figure .img::before {
+  display: none !important;
+}
+
+.pics figure {
+  position: absolute !important;
+}
+/*# sourceMappingURL=collage.css.map */
