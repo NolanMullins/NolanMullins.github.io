@@ -41,6 +41,10 @@ var pageTransition = {
         };
         this.pages.push(page);
     },
+
+    getPage: function(index) {
+        return this.pages[index] ? this.pages[index] : false;
+    },
     
     getCurrentPage: function() {
         return this.pages[this.currentPageIndex] ? this.pages[this.currentPageIndex] : false;
@@ -86,21 +90,23 @@ var pageTransition = {
     },
 
     gotoPage: function(index) {
-        if (!this.pages[index]) {
+        if (!this.pages[index] || this.currentPageIndex === index) {
             return false;
         }
-        this.transitionPageOut(this.getCurrentPage(), this.transitions[this.getNextPage().transitionName].oppositeOut);
-        this.transitionPageIn(this.pages[index], this.pages[index].transitionName);
+        var prevPage = this.currentPageIndex;
         this.currentPageIndex = index;
+        this.transitionPageOut(this.pages[prevPage], this.transitions[this.pages[prevPage].transitionName].oppositeOut);
+        this.transitionPageIn(this.pages[index], this.pages[index].transitionName);
     },
 
     goBackPage: function(index) {
-        if (!this.pages[index]) {
+        if (!this.pages[index] || this.currentPageIndex === index) {
             return false;
         }
-        this.transitionPageOut(this.getCurrentPage(), this.transitions[this.getCurrentPage().transitionName].reverse);
-        this.transitionPageIn(this.pages[index], this.transitions[this.pages[index].transitionName].oppositeIn);
+        var prevPage = this.currentPageIndex;
         this.currentPageIndex = index;
+        this.transitionPageOut(this.pages[prevPage], this.transitions[this.pages[prevPage].transitionName].reverse);
+        this.transitionPageIn(this.pages[index], this.transitions[this.pages[index].transitionName].oppositeIn);
     },
     
     transitionPageIn: function(page, pageTransitionName) {

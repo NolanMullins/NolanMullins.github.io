@@ -28,7 +28,6 @@ function generateCollage()
         }
     }
 
-
     $('#collage-container').html(pics);
 }
 
