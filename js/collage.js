@@ -1,5 +1,5 @@
 var numPics=50;
-
+var numPolaroids = 20;
 function generateCollage()
 { 
     var pics = "";
@@ -7,7 +7,7 @@ function generateCollage()
     for (var a = 1; a < numPics+1; a++) {
         order.push(a);
     }
-    for (var a = 0; a < numPics; a++) {
+    for (var a = 0; a < numPolaroids; a++) {
         var index = Math.floor((Math.random() * order.length));
         var pic = order.splice(index, 1);
         pics += genPic($(window).width()-270, $(window).height()-336, -50, pic);
