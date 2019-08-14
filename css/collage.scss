@@ -5,3 +5,15 @@
 .pics figure {
     position: absolute !important;
 }
+
+.pics .polaroid-container {
+    width: 80%;
+    height: 100%;
+    //margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (max-aspect-ratio: 1/1){
+        justify-content: center;
+    }
+}
