@@ -30,7 +30,7 @@ function genPic(maxX, maxY, padding, index)
                     + '-ms-transform: rotate('+rot+');'
                     + 'transform: rotate('+rot+');'
                +'" >'
-               + '<div class="img" style="background-image: url(\'img/life/1 ('+index+').jpg\');"></div>'
+               + '<div class="img" style="background-image: url(\'img/myLife/1 ('+index+').jpg\');"></div>'
                + '<figcaption></figcaption>'
                + '</figure>';
     return pic
