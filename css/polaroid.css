@@ -55,7 +55,22 @@ figcaption {
   top: -5%;
   width: 30%;
   height: 10%;
-  background-color: rgba(222, 220, 198, 0.85);
+  background-color: rgba(222, 220, 198, 0.95);
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(-1deg);
+  -o-transform: rotate(-1deg);
+  -ms-transform: rotate(-1deg);
+}
+
+#polaroid figure:nth-child(1) .img:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 30%;
+  top: -5%;
+  width: 0%;
+  height: 10%;
+  background-color: rgba(222, 220, 198, 0.95);
   -webkit-transform: rotate(-1deg);
   -moz-transform: rotate(-1deg);
   -o-transform: rotate(-1deg);
@@ -87,11 +102,26 @@ figcaption {
   top: 0px;
   width: 40%;
   height: 10%;
-  background-color: rgba(222, 220, 198, 0.85);
+  background-color: rgba(222, 220, 198, 0.95);
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+}
+
+#polaroid figure:nth-child(2) .img:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -15%;
+  top: 0px;
+  width: 40%;
+  height: 10%;
+  background-color: rgba(222, 220, 198, 0.95);
+  -webkit-transform: rotate(-40deg);
+  -moz-transform: rotate(-40deg);
+  -o-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
 }
 
 #polaroid figure:nth-child(2):hover {
@@ -119,11 +149,26 @@ figcaption {
   top: 0px;
   width: 63%;
   height: 10%;
-  background-color: rgba(222, 220, 198, 0.85);
+  background-color: rgba(222, 220, 198, 0.95);
   -webkit-transform: rotate(-22deg);
   -moz-transform: rotate(-22deg);
   -o-transform: rotate(-22deg);
   -ms-transform: rotate(-22deg);
+}
+
+#polaroid figure:nth-child(3) .img:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 70%;
+  top: 92%;
+  width: 50%;
+  height: 10%;
+  background-color: rgba(222, 220, 198, 0.95);
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
 }
 
 #polaroid figure:nth-child(3):hover {
@@ -151,7 +196,22 @@ figcaption {
   top: -8%;
   width: 32%;
   height: 10%;
-  background-color: rgba(222, 220, 198, 0.85);
+  background-color: rgba(222, 220, 198, 0.95);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+}
+
+#polaroid figure:nth-child(4) .img:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 35%;
+  top: -8%;
+  width: 0%;
+  height: 10%;
+  background-color: rgba(222, 220, 198, 0.95);
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
@@ -183,7 +243,22 @@ figcaption {
   top: -5%;
   width: 40%;
   height: 10%;
-  background-color: rgba(222, 220, 198, 0.85);
+  background-color: rgba(222, 220, 198, 0.95);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+}
+
+#polaroid figure:nth-child(5) .img:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 30%;
+  top: -5%;
+  width: 0%;
+  height: 10%;
+  background-color: rgba(222, 220, 198, 0.95);
   -webkit-transform: rotate(10deg);
   -moz-transform: rotate(10deg);
   -o-transform: rotate(10deg);

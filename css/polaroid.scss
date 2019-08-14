@@ -5,13 +5,20 @@ $cardHeight: 17%;
 $mobileCardWidth: 35%;
 $mobileCardHeight: 42%;
 
+$tapeThicc: 10%;
+$tapeColor: rgba(222, 220, 198, 0.95);
+
 $cardRotations: 3deg, 0deg, 8deg, -2deg, 1deg;
 $cardTop: -5%, -7%, 1%, -2%, 4%;
 $tapeLeft: 30%, 75%, -15%, 35%, 30%;
 $tapeTop: -5%, 0px, 0px, -8%, -5%;
 $tapeRotation: -1deg, 45deg, -22deg, 90deg, 10deg;
 $tapeWidth: 30%, 40%, 63%, 32%, 40%;
-$tapeThicc: 10%;
+
+$tape2Left: 30%, -15%, 70%, 35%, 30%;
+$tape2Top: -5%, 0px, 92%, -8%, -5%;
+$tape2Rotation: -1deg, -40deg, -35deg, 90deg, 10deg;
+$tape2Width: 0%, 40%, 50%, 0%, 0%;
 
 figure,
 figcaption {
@@ -72,11 +79,25 @@ figcaption {
       top: nth($tapeTop, $i);
       width: nth($tapeWidth, $i);
       height: $tapeThicc;
-      background-color: rgba(222, 220, 198, 0.85);
+      background-color: $tapeColor;
       -webkit-transform: rotate(nth($tapeRotation, $i));
       -moz-transform: rotate(nth($tapeRotation, $i));
       -o-transform: rotate(nth($tapeRotation, $i));
       -ms-transform: rotate(nth($tapeRotation, $i));
+    }
+    figure:nth-child(#{$i}) .img:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: nth($tape2Left, $i);
+      top: nth($tape2Top, $i);
+      width: nth($tape2Width, $i);
+      height: $tapeThicc;
+      background-color: $tapeColor;
+      -webkit-transform: rotate(nth($tape2Rotation, $i));
+      -moz-transform: rotate(nth($tape2Rotation, $i));
+      -o-transform: rotate(nth($tape2Rotation, $i));
+      -ms-transform: rotate(nth($tape2Rotation, $i));
     }
     figure:nth-child(#{$i}):hover {
       box-shadow: 1px 1px 5px 5px rgba(255, 255, 255, 0.1);
