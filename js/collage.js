@@ -1,5 +1,5 @@
-var numPics=50;
-var numPolaroids = 10;
+var numPics=52;
+
 function generateCollage()
 { 
     var pics = "";
