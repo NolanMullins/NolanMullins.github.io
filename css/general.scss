@@ -32,6 +32,11 @@ body {
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+
+    @media (max-aspect-ratio: 1/1){
+        background-size: contain;
+        height: 12%;
+    }
 }
 
 .nolan {

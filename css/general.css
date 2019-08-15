@@ -29,6 +29,13 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (max-aspect-ratio: 1 / 1) {
+  .lights {
+    background-size: contain;
+    height: 12%;
+  }
+}
+
 .nolan {
   width: 20%;
   height: 25%;
