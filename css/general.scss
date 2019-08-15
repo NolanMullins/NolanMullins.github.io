@@ -33,7 +33,11 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
 
-    @media (max-aspect-ratio: 1/1){
+    @media (max-aspect-ratio: 10/10){
+        background-size: cover;
+        height: 7%;
+    }
+    @media (max-aspect-ratio: 10/20){
         background-size: contain;
         height: 12%;
     }

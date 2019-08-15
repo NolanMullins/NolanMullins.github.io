@@ -29,7 +29,14 @@ body {
   background-repeat: no-repeat;
 }
 
-@media (max-aspect-ratio: 1 / 1) {
+@media (max-aspect-ratio: 10 / 10) {
+  .lights {
+    background-size: cover;
+    height: 7%;
+  }
+}
+
+@media (max-aspect-ratio: 10 / 20) {
   .lights {
     background-size: contain;
     height: 12%;
