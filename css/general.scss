@@ -24,25 +24,6 @@ body {
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
-.lights {
-    position: absolute;
-    width: 100%;
-    height: 30%;
-    background-image: url("../img/lights-glowing.png");
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-
-    @media (max-aspect-ratio: 10/10){
-        background-size: cover;
-        height: 7%;
-    }
-    @media (max-aspect-ratio: 10/20){
-        background-size: contain;
-        height: 12%;
-    }
-}
-
 .nolan {
     width: 20%;
     height: 25%;
