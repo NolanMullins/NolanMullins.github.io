@@ -21,7 +21,9 @@ body {
 
     background-color: #958676;
     background-image: url("../img/concrete-wall.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-image: url("../img/concrete-wall.png"), radial-gradient(ellipse at center, #b9a48e, #9d8974);
+    background-image: url("../img/concrete-wall.png"), -moz-radial-gradient(center, #b9a48e, #9d8974);
+    background-image: url("../img/concrete-wall.png"), -webkit-radial-gradient(center, #b9a48e, #9d8974);
 }
 
 .nolan {
