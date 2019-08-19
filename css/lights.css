@@ -1,5 +1,6 @@
 .lights {
   position: absolute;
+  top: 0px;
   width: 100%;
   height: 30%;
   background-image: url("../img/lights/lights.png");

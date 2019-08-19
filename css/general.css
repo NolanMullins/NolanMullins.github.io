@@ -39,4 +39,68 @@ body {
     left: 2%;
   }
 }
+
+.darken {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+
+.back-btn-container {
+  position: absolute;
+  top: 90%;
+  height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.back-btn {
+  width: 5%;
+  padding-top: 5%;
+  border-radius: 50%;
+  background-color: rgba(189, 170, 0, 0);
+  border: 1px solid black;
+}
+
+.chevron {
+  margin-top: -1.25%;
+  width: 2.5%;
+  height: 0px;
+  padding-top: 2.5%;
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
+  -webkit-transition: 0.3s all cubic-bezier(1, 0.25, 0.25, 0.8);
+  transition: 0.3s all cubic-bezier(1, 0.25, 0.25, 0.8);
+  will-change: transform;
+}
+
+.chevron.down {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.chevron.up {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+  .chevron {
+    width: 7%;
+    padding-top: 7%;
+    border-top: 5px solid #eee;
+    border-right: 5px solid #eee;
+  }
+}
 /*# sourceMappingURL=general.css.map */

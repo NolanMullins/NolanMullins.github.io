@@ -12,6 +12,7 @@
     <link href="css/page.css" rel="stylesheet">
     <link href="css/polaroid.css" rel="stylesheet">
     <link href="css/collage.css" rel="stylesheet">
+    <link href="css/paper.css" rel="stylesheet">
     <link href="css/lights.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
 
@@ -20,8 +21,6 @@
 <body>
     <div class="container">
         <div id="polaroid" class="page home" data-transition="fromTop">
-            <div class="lights">
-            </div>
             <div class="polaroid-container">
                 <figure>
                     <div class="img" style="background-image: url('img/evertz.jpg');" onclick="gotoPage(2)"></div>
@@ -44,6 +43,8 @@
                     <figcaption>Pictures</figcaption>
                 </figure>
             </div>
+            <div class="darken"></div>
+            <div class="lights"></div>
             <div class="nolan" style="background-image: url('img/nolan.png');" onclick="gotoPage(1)"></div>
         </div>
     
@@ -55,8 +56,16 @@
             <p>Evertz wip</p>
         </div>
 
-        <div class="page casc" data-transition="fromTop" onclick="goHome()">
-            <p>Cascination wip</p>
+        <div class="page casc" data-transition="fromTop">
+            <div class="paper-container">
+                <div class="paper">
+                    <div class="tape"></div>
+                    <img class="title" src="img/casc/title.png"></img>
+                </div>
+            </div>
+            <div class="back-btn-container">
+                <div class="chevron down" onclick="goHome()"></div>
+            </div>
         </div>
 
         <div class="page resume" data-transition="fromTop" onclick="goHome()">
