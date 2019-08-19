@@ -83,6 +83,7 @@
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
+  background-image: url("/img/dust.png");
 }
 
 @media (max-aspect-ratio: 1 / 1) {
@@ -112,6 +113,7 @@
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
+  background-image: url("/img/dust.png");
 }
 
 @media (max-aspect-ratio: 1 / 1) {

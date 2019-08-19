@@ -90,6 +90,7 @@ figcaption {
       width: nth($tapeWidth, $i);
       height: $tapeThicc;
       background-color: $tapeColor;
+      background-image: url("/img/dust.png"); 
       -webkit-transform: rotate(nth($tapeRotation, $i));
       -moz-transform: rotate(nth($tapeRotation, $i));
       -o-transform: rotate(nth($tapeRotation, $i));
@@ -103,6 +104,7 @@ figcaption {
       top: nth($tape2Top, $i);
       width: nth($tape2Width, $i);
       height: $tapeThicc;
+      background-image: url("/img/dust.png"); 
       background-color: $tapeColor;
       -webkit-transform: rotate(nth($tape2Rotation, $i));
       -moz-transform: rotate(nth($tape2Rotation, $i));

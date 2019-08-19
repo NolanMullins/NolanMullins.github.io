@@ -75,6 +75,8 @@ $tapeColor: rgba(222, 220, 198, 0.95);
     -o-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
 
+    background-image: url("/img/dust.png"); 
+
     @media (max-aspect-ratio: 1/1){
         top: 1%;
         left: -10%;
@@ -87,6 +89,7 @@ $tapeColor: rgba(222, 220, 198, 0.95);
     width: 100%;
     height: 0px;
 }
+
 .paper .tape:before {
     content: "";
     display: block;
@@ -100,6 +103,8 @@ $tapeColor: rgba(222, 220, 198, 0.95);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
+
+    background-image: url("/img/dust.png"); 
 
     @media (max-aspect-ratio: 1/1){
         top: 1%;
