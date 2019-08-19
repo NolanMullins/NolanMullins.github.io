@@ -50,12 +50,12 @@ figcaption {
   background: linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);*/
 
   background: #eee6d8;
-  background-image: url("img/white-paperboard.png"); /* fallback */
-  background-image: url("img/white-paperboard.png"), -webkit-linear-gradient(top, #ede1c9CC, #fef8e2CC 20%, #f2ebdeCC 60%); /* fallback */
-  background-image: url("img/beige-paper.png"), -moz-linear-gradient(top, #ede1c9CC, #fef8e2CC 20%, #f2ebdeCC 60%); 
-  background-image: url("img/white-paperboard.png"), -o-linear-gradient(top, #ede1c9CC, #fef8e2CC 20%, #f2ebdeCC 60%); 
-  background-image: url("img/white-paperboard.png"), -ms-linear-gradient(top, #ede1c9CC, #fef8e2CC 20%, #f2ebdeCC 60%); 
-  background-image: url("img/white-paperboard.png"), linear-gradient(top, #ede1c9CC, #fef8e2CC 20%, #f2ebdeCC 60%); 
+  background-image: url("/img/white-paperboard.png"); /* fallback */
+  background-image: url("/img/white-paperboard.png"), -webkit-linear-gradient(top, #ede1c9CC, #fef8e2CC 20%, #f2ebdeCC 60%); /* fallback */
+  background-image: url("/img/beige-paper.png"), -moz-linear-gradient(top, #ede1c9CC, #fef8e2CC 20%, #f2ebdeCC 60%); 
+  background-image: url("/img/white-paperboard.png"), -o-linear-gradient(top, #ede1c9CC, #fef8e2CC 20%, #f2ebdeCC 60%); 
+  background-image: url("/img/white-paperboard.png"), -ms-linear-gradient(top, #ede1c9CC, #fef8e2CC 20%, #f2ebdeCC 60%); 
+  background-image: url("/img/white-paperboard.png"), linear-gradient(top, #ede1c9CC, #fef8e2CC 20%, #f2ebdeCC 60%); 
 
   transition: all 0.2s ease-in-out;
   -webkit-backface-visibility: hidden; /*prevent rotated text being jagged in Chrome and Safari*/

@@ -28,11 +28,11 @@ figcaption {
   background: -ms-linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);
   background: linear-gradient(top, #ede1c9, #fef8e2 20%, #f2ebde 60%);*/
   background: #eee6d8;
-  background-image: url("img/white-paperboard.png");
+  background-image: url("/img/white-paperboard.png");
   /* fallback */
   /* fallback */
-  background-image: url("img/white-paperboard.png"), -webkit-gradient(linear, left top, left bottom, from(#ede1c9CC), color-stop(20%, #fef8e2CC), color-stop(60%, #f2ebdeCC));
-  background-image: url("img/white-paperboard.png"), linear-gradient(top, #ede1c9CC, #fef8e2CC 20%, #f2ebdeCC 60%);
+  background-image: url("/img/white-paperboard.png"), -webkit-gradient(linear, left top, left bottom, from(#ede1c9CC), color-stop(20%, #fef8e2CC), color-stop(60%, #f2ebdeCC));
+  background-image: url("/img/white-paperboard.png"), linear-gradient(top, #ede1c9CC, #fef8e2CC 20%, #f2ebdeCC 60%);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   -webkit-backface-visibility: hidden;
