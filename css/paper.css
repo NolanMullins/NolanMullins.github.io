@@ -32,14 +32,26 @@
   }
 }
 
-.paper * {
-  font-family: "Open Sans", sans-serif !important;
+.paper p {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  color: #333;
+  margin: 2% 5% 2% 5%;
+  width: auto;
+  text-indent: 2rem;
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+  .paper p {
+    margin: 1% 2% 1% 2%;
+  }
 }
 
 .paper .title {
-  width: 50%;
+  margin-top: 1%;
+  width: 100%;
   color: #333333;
-  height: 15%;
+  height: 7%;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -47,8 +59,15 @@
 @media (max-aspect-ratio: 1 / 1) {
   .paper .title {
     width: 100%;
-    height: 10%;
+    height: 5%;
   }
+}
+
+.paper .divider {
+  width: 50%;
+  height: 1px;
+  margin: 2% auto 2% auto;
+  background-color: #14943E;
 }
 
 .paper:before {
