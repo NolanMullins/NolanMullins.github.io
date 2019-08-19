@@ -19,7 +19,6 @@ function generateCollage()
     for (var a = 1; a < numPics+1; a++) {
         order.push(a);
     }
-
     for (var a = 0; a < numRow; a++) {
         for (var b = 0; b < numCol; b++) {
             var index = Math.floor((Math.random() * order.length));
@@ -51,3 +50,7 @@ function genPic(x, y, width, height, index)
                + '</figure>';
     return pic
 }
+
+$(document).ready(function() {
+    generateCollage();
+});
