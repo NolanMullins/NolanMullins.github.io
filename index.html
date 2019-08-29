@@ -5,6 +5,7 @@
     <!-- jQuery -->
     <script src="vendor/jquery/jquery-2.2.4.min.js"></script>
     <script src="vendor/modernizr/modernizr.min.js"></script>
+    <script src="vendor/masonry.pkgd.min.js"></script>
     <script src="js/page.js"></script>
     <!--<script src="js/collage.js"></script>-->
     <script src="js/lights.js"></script>
@@ -13,6 +14,7 @@
     <link href="css/polaroid.css" rel="stylesheet">
     <link href="css/collage.css" rel="stylesheet">
     <link href="css/paper.css" rel="stylesheet">
+    <link href="css/masonry.css" rel="stylesheet">
     <link href="css/lights.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
 
@@ -52,18 +54,36 @@
             <p>About me! wip</p>
         </div>
 
-        <div class="page evertz" data-transition="fromTop" onclick="goHome()">
+        <div class="page evertz" data-transition="fromTop" onclick="">
             <div class="paper-container">
                 <div class="paper">
                     <div class="tape"></div>
                     <img class="title" src="img/evertz/evertz-logo-pencil-dark.png"></img>
-                    <div class="divider-evertz"></div>
-                    <p>   Evertz Microsystems is a Canadian developer and manufacturer of broadcasting equipment.
-                         Their main headquarters is based in Burlington, Ontario with other offices in the United States,
-                          United Kingdom, Germany, United Arab Emirates, India, Hong Kong, China, Singapore, and Australia.
-                           They currently employ over 2000 people at their head office.
-                            Evertz specializes in delivering end to end broadcasting solutions with systems for content creation to distribution.
-                             They currently deliver content to television, on demand services, IPTV and mobile. </p>
+                    <div class="divider" style="background-color: #FEFE68"></div>
+                    <div class="grid">
+                            <div class="grid-sizer"></div>
+                            <div class="grid-item grid-item--width2">
+                                <p>
+                                        Evertz Microsystems is a Canadian developer and manufacturer of broadcasting equipment.
+                                        Their main headquarters is based in Burlington, Ontario with other offices in the United States,
+                                         United Kingdom, Germany, United Arab Emirates, India, Hong Kong, China, Singapore, and Australia.
+                                          They currently employ over 2000 people at their head office.
+                                           Evertz specializes in delivering end to end broadcasting solutions with systems for content creation to distribution.
+                                            They currently deliver content to television, on demand services, IPTV and mobile. 
+                                </p>
+                            </div>
+                            <div class="grid-item grid-item--width2">
+                                <p>
+                                        During my eight months as a student design engineer I worked on various projects such as VistaLINK PRO (VLPro),
+                                         internal web tools, and some new products.
+                                          VLPro is Java based which allowed me to gain more experience in the language and learn a few tricks from my team lead.
+                                           My first tasks were mainly debugging issues reported by customers and engineers as I become more familiar with the software I moved on to adding features such as graphing capabilities and custom web frames.
+                                            Adding the graphing support allowed for real time data analytics, I worked with an engineering team to support their hardware along with a product team to build the component to their needs.
+                                             Another major project I worked on was a new Web Based product. This was written in Angular 2+ and allowed me to branch off into a new area of development where I didn't have much experience.
+                                              The last project I worked on was a license management tool allowing customers to better control the licenses running on their hardware.
+                                </p>
+                            </div>
+                        </div>
                 </div>
             </div>
             <div class="back-btn-container">
@@ -77,11 +97,25 @@
                     <div class="tape"></div>
                     <img class="title" src="img/casc/cascination-logo-pencil.png"></img>
                     <div class="divider"></div>
-                    <p>CAScination AG is a medical technology company dedicated to the development of computer-assisted and image-guided surgery.
-                          Their navigation systems and surgical robots are designed to improve outcomes for patients
-                           undergoing surgical or interventional procedures and offer new perspectives to patients worldwide.
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item grid-item--width2">
+                            <p>CAScination AG is a medical technology company dedicated to the development of computer-assisted and image-guided surgery.
+                            Their navigation systems and surgical robots are designed to improve outcomes for patients
+                            undergoing surgical or interventional procedures and offer new perspectives to patients worldwide.
                             Their CAS-One planning and navigation system is used to treat patients suffering from soft tissue cancer
-                             by many hospitals across Europe. </p>
+                             by many hospitals across Europe. 
+                            </p>
+                        </div>
+                        <div class="grid-item grid-item--width2">
+                            <p>CAScination AG is a medical technology company dedicated to the development of computer-assisted and image-guided surgery.
+                            Their navigation systems and surgical robots are designed to improve outcomes for patients
+                            undergoing surgical or interventional procedures and offer new perspectives to patients worldwide.
+                            Their CAS-One planning and navigation system is used to treat patients suffering from soft tissue cancer
+                             by many hospitals across Europe. 
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="back-btn-container">

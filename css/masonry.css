@@ -1,0 +1,24 @@
+.grid {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #333;
+  margin: 2% 0% 2% 0%;
+  width: auto;
+  text-indent: 2rem;
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+  .grid {
+    margin: 1% 2% 1% 2%;
+  }
+}
+
+.grid-sizer,
+.grid-item {
+  width: 10%;
+}
+
+.grid-item--width2 {
+  width: 50%;
+}
+/*# sourceMappingURL=masonry.css.map */
