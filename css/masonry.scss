@@ -55,3 +55,9 @@
         width: 60%;
     }
 }
+
+.mobile-10 {
+    @media (max-aspect-ratio: 1/1){
+        width: 100%;
+    }
+}

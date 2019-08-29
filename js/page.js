@@ -151,7 +151,7 @@ $(document).ready(function() {
 
     pageTransition.first();
 
-    $('.grid').masonry({
+    var $grid = $('.grid').masonry({
         // set itemSelector so .grid-sizer is not used in layout
         itemSelector: '.grid-item',
         // use element for option
@@ -159,8 +159,12 @@ $(document).ready(function() {
         percentPosition: true
     });
 
+    $grid.imagesLoaded().progress( function() {
+        console.log("Image loaded");
+        $grid.masonry('layout');
+    });
+
     $('.arrow--left').on('click', function() {
-        console.log("Next");
         pageTransition.previous();
     });
 
