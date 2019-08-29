@@ -9,6 +9,7 @@
     
     @media (max-aspect-ratio: 1/1){
         margin: 1% 2% 1% 2%;
+        font-size: 0.85rem;
     }
 }
 
@@ -18,10 +19,39 @@
     width: 10%; 
 }
 
-.grid-item {
-
+.grid-item-2 {
+    width: 20%;
 }
 
-.grid-item--width2 { 
+.grid-item-3 {
+    width: 30%;
+}
+
+.grid-item-4 {
+    width: 40%;
+}
+
+.mobile-4 {
+    @media (max-aspect-ratio: 1/1){
+        width: 40%;
+    }
+}
+
+.grid-item-5 { 
     width: 50%; 
+}
+
+.mobile-5 {
+    @media (max-aspect-ratio: 1/1){
+        width: 50%;
+    }
+}
+.grid-item-6 { 
+    width: 60%; 
+}
+
+.mobile-6 {
+    @media (max-aspect-ratio: 1/1){
+        width: 60%;
+    }
 }

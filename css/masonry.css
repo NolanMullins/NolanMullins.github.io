@@ -10,6 +10,7 @@
 @media (max-aspect-ratio: 1 / 1) {
   .grid {
     margin: 1% 2% 1% 2%;
+    font-size: 0.85rem;
   }
 }
 
@@ -18,7 +19,41 @@
   width: 10%;
 }
 
-.grid-item--width2 {
+.grid-item-2 {
+  width: 20%;
+}
+
+.grid-item-3 {
+  width: 30%;
+}
+
+.grid-item-4 {
+  width: 40%;
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+  .mobile-4 {
+    width: 40%;
+  }
+}
+
+.grid-item-5 {
   width: 50%;
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+  .mobile-5 {
+    width: 50%;
+  }
+}
+
+.grid-item-6 {
+  width: 60%;
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+  .mobile-6 {
+    width: 60%;
+  }
 }
 /*# sourceMappingURL=masonry.css.map */
