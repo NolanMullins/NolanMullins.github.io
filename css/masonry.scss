@@ -14,6 +14,15 @@
     }
 }
 
+.big-text {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    @media (max-aspect-ratio: 1/1) {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+    }
+}
+
 //Grid sizer controls column width
 .grid-sizer,
 .grid-item { 
@@ -54,6 +63,12 @@
 .mobile-6 {
     @media (max-aspect-ratio: 1/1){
         width: 60%;
+    }
+}
+
+.mobile-8 {
+    @media (max-aspect-ratio: 1/1){
+        width: 80%;
     }
 }
 
