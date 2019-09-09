@@ -19,6 +19,7 @@
     <link href="css/lights.css" rel="stylesheet">
     <link href="css/general.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -51,16 +52,44 @@
             <div class="nolan" style="background-image: url('img/nolan.png');" onclick="gotoPage(1)"></div>
         </div>
     
-        <div class="page about" data-transition="fromTop" onclick="goHome()">
-            <p>About me! wip</p>
+        <div class="page about" data-transition="fromTop">
+            <div class="paper-container">
+                <div class="paper">
+                    <div class="tape"></div>
+                    <div style="width: 100%; text-align: center; font-size: 4rem; font-family: 'Chilanka', cursive; margin-top: 2.5%">About Me</div>
+                    <div class="divider" style="background-color: #333"></div>
+                    <div class="grid" style="font-size: 0.85rem;">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item grid-item-10" style="height: 5%;"></div>
+                        <div class="grid-item grid-item-5 mobile-9" style="padding: 20px">
+                            <p>
+                                I'm a Computer Science Major from Guelph, Ontario. Currently I have been focused on 
+                                software design and usability. The bulk of my experience is in C/C++, Java and Web (I know a bit 
+                                all over the place but I truly enjoy learning new skills). 
+                            </p>
+                            <p>
+                                In my free time you can find me camping, hiking or gaming with my friends.
+                                Some of my favorite movies are Star wars, Hot fuzz and Mamma Mia.
+                                <br>
+                                <br>
+                                Feel free to
+                                <a href="mailto:nolan.mullins.com">email</a>
+                                me if you want to get in touch! 
+                            </p>
+                    </div>
+                </div>
+            </div>
             <div class="darken"></div>
+            <div class="back-btn-container">
+                <div class="chevron down" onclick="goHome()"></div>
+            </div>
         </div>
 
         <div class="page evertz" data-transition="fromTop" onclick="">
             <div class="paper-container">
                 <div class="paper">
                     <div class="tape"></div>
-                    <img class="title" src="img/evertz/evertz-logo-pencil-dark.png"></img>
+                    <img class="title" src="/img/evertz/evertz-logo-pencil-dark.png"></img>
                     <div class="divider" style="background-color: #FEFE68"></div>
                     <div class="grid">
                             <div class="grid-sizer"></div>

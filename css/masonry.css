@@ -11,6 +11,7 @@
   .grid {
     margin: 1% 2% 1% 2%;
     font-size: 1rem;
+    line-height: 1.2rem;
   }
 }
 
@@ -55,6 +56,16 @@
   .mobile-6 {
     width: 60%;
   }
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+  .mobile-9 {
+    width: 90%;
+  }
+}
+
+.grid-item-10 {
+  width: 100%;
 }
 
 @media (max-aspect-ratio: 1 / 1) {

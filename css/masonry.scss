@@ -10,6 +10,7 @@
     @media (max-aspect-ratio: 1/1){
         margin: 1% 2% 1% 2%;
         font-size: 1rem;
+        line-height: 1.2rem;
     }
 }
 
@@ -54,6 +55,16 @@
     @media (max-aspect-ratio: 1/1){
         width: 60%;
     }
+}
+
+.mobile-9 {
+    @media (max-aspect-ratio: 1/1){
+        width: 90%;
+    }
+}
+
+.grid-item-10 {
+    width: 100%;
 }
 
 .mobile-10 {
