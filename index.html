@@ -11,8 +11,15 @@
     <!--<script src="js/collage.js"></script>-->
     <script src="js/lights.js"></script>
 
+    <!-- Generic components-->
     <link href="css/page.css" rel="stylesheet">
+    <link href="css/infoCard.css" rel="stylesheet">
     <link href="css/polaroid.css" rel="stylesheet">
+
+    <!-- Page specific-->
+    <link href="pageCSS/resume.css" rel="stylesheet">
+
+    <!-- core -->
     <link href="css/collage.css" rel="stylesheet">
     <link href="css/paper.css" rel="stylesheet">
     <link href="css/masonry.css" rel="stylesheet">
@@ -250,9 +257,30 @@
             </div>
         </div>
 
-        <div class="page resume" data-transition="fromTop" onclick="goHome()">
-            <p>Resume wip</p>
+        <div class="page resume" data-transition="fromTop">
+            <div id="resumeWall" class="gridWall">
+                <div class="paper" style="">
+                    <div style="margin-top: -100%;"> TODO </div>
+                </div>
+                <div class="paper" style="margin-right: -30px; padding-top: 20%;">
+                </div>
+                <div class="paper" style="">
+                    <div style="margin-top: -100%;"> TODO </div>
+                </div>
+                <div class="paper" style="width: 10%; padding-top: 12%;">
+                </div>
+                <div class="paper" style="margin-top: -50px; margin-left: -80px">
+                    <div style="margin-top: -100%;"> TODO </div>
+                </div>
+                <div class="paper" style="margin-top: -30px;">
+                    <div style="margin-top: -100%;"> TODO </div>
+                </div>
+            </div>
             <div class="darken"></div>
+            <div class="back-btn-container">
+                <div class="chevron down" onclick="goHome()"></div>
+            </div>
+            <div class="nolan" style="background-image: url('img/nolan.png');" onclick="gotoPage(1)"></div>
         </div>
 
         <!--<div id="polaroid" class="page pics" data-transition="fromTop" onclick="goHome()">

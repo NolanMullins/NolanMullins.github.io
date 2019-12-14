@@ -1,0 +1,17 @@
+
+$pinnedRotations: 3deg, -1deg, 8deg, -2deg, 1deg, -3deg; 
+$pinnedColor: #d8abab #eee #eee #aad383 #eee #eee;
+
+@for $i from 1 through length($pinnedRotations) {
+    #resumeWall {
+        .paper:nth-child(#{$i}) {
+            -webkit-transform: rotate(nth($pinnedRotations, $i));
+            -moz-transform: rotate(nth($pinnedRotations, $i));
+            -o-transform: rotate(nth($pinnedRotations, $i));
+            -ms-transform: rotate(nth($pinnedRotations, $i));
+            transform: rotate(nth($pinnedRotations, $i));
+            background-color: nth($pinnedColor, $i);
+            background-image: url("/img/beige-paper.png");
+        }
+    } 
+}

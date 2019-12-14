@@ -1,0 +1,48 @@
+.gridWall {
+  width: 90%;
+  height: 100%;
+  margin: 0% 5% 0% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.gridWall .paper {
+  margin: 2% 5%;
+  width: 15%;
+  height: 0px;
+  padding-top: 15%;
+}
+
+.gridWall .paper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 30%;
+  top: -6%;
+  width: 80px;
+  height: 40px;
+  background-color: rgba(222, 220, 198, 0.95);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  background-image: url("/img/dust.png");
+}
+
+@media (max-aspect-ratio: 1 / 1) {
+  .gridWall .paper::before {
+    top: 1%;
+    left: 80%;
+    width: 30%;
+    height: 3%;
+  }
+}
+/*# sourceMappingURL=infoCard.css.map */
