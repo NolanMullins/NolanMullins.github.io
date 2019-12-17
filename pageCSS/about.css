@@ -1,42 +1,42 @@
-#resumeWall .paper:nth-child(1) {
+#aboutWall .paper:nth-child(1) {
   -webkit-transform: rotate(3deg);
   transform: rotate(3deg);
   background-color: #d8abab;
   background-image: url("/img/beige-paper.png");
 }
 
-#resumeWall .paper:nth-child(2) {
+#aboutWall .paper:nth-child(2) {
   -webkit-transform: rotate(-1deg);
   transform: rotate(-1deg);
   background-color: #eee;
   background-image: url("/img/beige-paper.png");
 }
 
-#resumeWall .paper:nth-child(3) {
+#aboutWall .paper:nth-child(3) {
   -webkit-transform: rotate(8deg);
   transform: rotate(8deg);
   background-color: #eee;
   background-image: url("/img/beige-paper.png");
 }
 
-#resumeWall .paper:nth-child(4) {
+#aboutWall .paper:nth-child(4) {
   -webkit-transform: rotate(-2deg);
   transform: rotate(-2deg);
   background-color: #aad383;
   background-image: url("/img/beige-paper.png");
 }
 
-#resumeWall .paper:nth-child(5) {
+#aboutWall .paper:nth-child(5) {
   -webkit-transform: rotate(1deg);
   transform: rotate(1deg);
   background-color: #eee;
   background-image: url("/img/beige-paper.png");
 }
 
-#resumeWall .paper:nth-child(6) {
+#aboutWall .paper:nth-child(6) {
   -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
   background-color: #eee;
   background-image: url("/img/beige-paper.png");
 }
-/*# sourceMappingURL=resume.css.map */
+/*# sourceMappingURL=about.css.map */

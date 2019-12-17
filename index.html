@@ -17,7 +17,7 @@
     <link href="css/polaroid.css" rel="stylesheet">
 
     <!-- Page specific-->
-    <link href="pageCSS/resume.css" rel="stylesheet">
+    <link href="pageCSS/about.css" rel="stylesheet">
 
     <!-- core -->
     <link href="css/collage.css" rel="stylesheet">
@@ -45,7 +45,7 @@
                     <div class="img" style="background-image: url('img/clariden-selfie.jpg');"></div>
                     <figcaption>About me</figcaption>
                 </figure>
-                <figure onclick="gotoPage(4)">
+                <figure onclick="window.open('NolanMullins.pdf', '_blank', 'fullscreen=yes'); return false">
                     <div class="img" style="background-image: url('img/vscode.jpg');"></div>
                     <figcaption>Resume</figcaption>
                 </figure>
@@ -60,58 +60,29 @@
         </div>
     
         <div class="page about" data-transition="fromTop">
-            <div class="paper-container">
-                <div class="paper">
-                    <div class="tape"></div>
-                    <div style="width: 100%; text-align: center; font-size: 4rem; font-family: 'Chilanka', cursive; margin-top: 2.5%">About Me</div>
-                    <div class="grid big-text" style="">
-                        <div class="grid-sizer"></div>
-                        <div class="grid-item grid-item-4 mobile-9" style="padding: 0% 5%">
-                            <p>
-                                I'm a Computer Science Major from Guelph, Ontario. Currently I have been focused on 
-                                software design and usability. The bulk of my experience is in C/C++, Java and Web (HTML, CSS / SASS, Angular). 
-                            </p>
-                            <p>
-                                In my free time you can find me camping, hiking or gaming with my friends.
-                                Some of my favorite movies are Star wars, Hot fuzz and Mamma Mia.
-                                <br>
-                                <br>
-                                Feel free to
-                                <a href="mailto:nolan.mullins.com">email</a>
-                                me if you want to get in touch! 
-                            </p>
-                    </div>
-                    <div class="grid-item grid-item-4 mobile-10" style="padding: 4% 0% 2% 0%; display: flex; justify-content: center">
-                        <img src="/img/uofg.png" style="padding: 0% 10%;" height="225px">
-                    </div>
-                    <div class="grid-item grid-item-4 mobile-10" style="padding: 2% 0%; text-align: center;">
-                        <h2 style="font-family: 'Chilanka', cursive;">Education</h2>
-                        Bachelor of Computer Science (co-op) 
-                        <br>
-                        Minor in Mathematics
-                        <br>
-                        2015-2020
-                    </div>
-                    <div class="grid-item grid-item-5 mobile-10" style="padding: 2% 0%; text-align: center;">
-                        <h2 style="font-family: 'Chilanka', cursive;">Experience</h2>
-                        Cascination AG 
-                        <br>
-                        Intern software developer
-                        <br>
-                        2019
-                        <br><br>
-                        Evertz Microsystems
-                        <br>
-                        Intern software developer
-                        <br>
-                        2017-2018
-                    </div>
+            <div id="aboutWall" class="gridWall">
+                <div class="paper" style="">
+                    <div style="margin-top: -100%;"> TODO </div>
+                </div>
+                <div class="paper" style="margin-right: -30px; padding-top: 20%;">
+                </div>
+                <div class="paper" style="">
+                    <div style="margin-top: -100%;"> TODO </div>
+                </div>
+                <div class="paper" style="width: 10%; padding-top: 12%;">
+                </div>
+                <div class="paper" style="margin-top: -50px; margin-left: -80px">
+                    <div style="margin-top: -100%;"> TODO </div>
+                </div>
+                <div class="paper" style="margin-top: -30px;">
+                    <div style="margin-top: -100%;"> TODO </div>
                 </div>
             </div>
             <div class="darken"></div>
             <div class="back-btn-container">
                 <div class="chevron down" onclick="goHome()"></div>
             </div>
+            <div class="nolan" style="background-image: url('img/nolan.png');" onclick="gotoPage(1)"></div>
         </div>
 
         <div class="page evertz" data-transition="fromTop" onclick="">
@@ -258,29 +229,58 @@
         </div>
 
         <div class="page resume" data-transition="fromTop">
-            <div id="resumeWall" class="gridWall">
-                <div class="paper" style="">
-                    <div style="margin-top: -100%;"> TODO </div>
-                </div>
-                <div class="paper" style="margin-right: -30px; padding-top: 20%;">
-                </div>
-                <div class="paper" style="">
-                    <div style="margin-top: -100%;"> TODO </div>
-                </div>
-                <div class="paper" style="width: 10%; padding-top: 12%;">
-                </div>
-                <div class="paper" style="margin-top: -50px; margin-left: -80px">
-                    <div style="margin-top: -100%;"> TODO </div>
-                </div>
-                <div class="paper" style="margin-top: -30px;">
-                    <div style="margin-top: -100%;"> TODO </div>
+            <div class="paper-container">
+                <div class="paper">
+                    <div class="tape"></div>
+                    <div style="width: 100%; text-align: center; font-size: 4rem; font-family: 'Chilanka', cursive; margin-top: 2.5%">About Me</div>
+                    <div class="grid big-text" style="">
+                        <div class="grid-sizer"></div>
+                        <div class="grid-item grid-item-4 mobile-9" style="padding: 0% 5%">
+                            <p>
+                                I'm a Computer Science Major from Guelph, Ontario. Currently I have been focused on 
+                                software design and usability. The bulk of my experience is in C/C++, Java and Web (HTML, CSS / SASS, Angular). 
+                            </p>
+                            <p>
+                                In my free time you can find me camping, hiking or gaming with my friends.
+                                Some of my favorite movies are Star wars, Hot fuzz and Mamma Mia.
+                                <br>
+                                <br>
+                                Feel free to
+                                <a href="mailto:nolan.mullins.com">email</a>
+                                me if you want to get in touch! 
+                            </p>
+                    </div>
+                    <div class="grid-item grid-item-4 mobile-10" style="padding: 4% 0% 2% 0%; display: flex; justify-content: center">
+                        <img src="/img/uofg.png" style="padding: 0% 10%;" height="225px">
+                    </div>
+                    <div class="grid-item grid-item-4 mobile-10" style="padding: 2% 0%; text-align: center;">
+                        <h2 style="font-family: 'Chilanka', cursive;">Education</h2>
+                        Bachelor of Computer Science (co-op) 
+                        <br>
+                        Minor in Mathematics
+                        <br>
+                        2015-2020
+                    </div>
+                    <div class="grid-item grid-item-5 mobile-10" style="padding: 2% 0%; text-align: center;">
+                        <h2 style="font-family: 'Chilanka', cursive;">Experience</h2>
+                        Cascination AG 
+                        <br>
+                        Intern software developer
+                        <br>
+                        2019
+                        <br><br>
+                        Evertz Microsystems
+                        <br>
+                        Intern software developer
+                        <br>
+                        2017-2018
+                    </div>
                 </div>
             </div>
             <div class="darken"></div>
             <div class="back-btn-container">
                 <div class="chevron down" onclick="goHome()"></div>
             </div>
-            <div class="nolan" style="background-image: url('img/nolan.png');" onclick="gotoPage(1)"></div>
         </div>
 
         <!--<div id="polaroid" class="page pics" data-transition="fromTop" onclick="goHome()">
