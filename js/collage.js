@@ -19,11 +19,15 @@ function generateCollage()
     for (var a = 1; a < numPics+1; a++) {
         order.push(a);
     }
-    for (var a = 0; a < numRow; a++) {
-        for (var b = 0; b < numCol; b++) {
-            var index = Math.floor((Math.random() * order.length));
-            var pic = order.splice(index, 1);
-            pics += genPic(b*cardWidth + x, a*cardHeight + y, cardWidth, cardHeight, pic);
+    for (let a = 0; a < numRow; a++) {
+        for (let b = 0; b < numCol; b++) {
+            setTimeout( function() {
+                var index = Math.floor((Math.random() * order.length));
+                var pic = order.splice(index, 1);
+                //pics += genPic(b*cardWidth + x, a*cardHeight + y, cardWidth, cardHeight, pic);
+                pic = genPic(b * cardWidth + x, a * cardHeight + y, cardWidth, cardHeight, pic);
+                $('#collage-container').append(pic).fadeIn(500);
+            }, 100+a*100 + b*50);
         }
     }
 
@@ -52,5 +56,5 @@ function genPic(x, y, width, height, index)
 }
 
 $(document).ready(function() {
-    generateCollage();
+    setTimeout(generateCollage, 200);
 });

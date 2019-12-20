@@ -1,3 +1,28 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+
+/* Opera < 12.1 */
+
 .pics figure::before, .pics figure .img::before {
   display: none !important;
 }
@@ -25,5 +50,14 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+.pics .polaroid-container figure {
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  /* Firefox < 16 */
+  /* Internet Explorer */
+  /* Opera < 12.1 */
+  animation: fadein 2s;
 }
 /*# sourceMappingURL=collage.css.map */
