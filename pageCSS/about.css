@@ -99,8 +99,8 @@
   height: 14rem;
   padding-top: 0%;
   margin: 5%;
-  -webkit-transform: rotate(-2deg);
-  transform: rotate(-2deg);
+  -webkit-transform: rotate(2deg);
+  transform: rotate(2deg);
   background-color: #aad383;
   background-image: url("/img/beige-paper.png");
 }
