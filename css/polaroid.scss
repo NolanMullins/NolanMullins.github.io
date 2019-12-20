@@ -30,7 +30,7 @@ figcaption {
   overflow: hidden;
 }
 
-#polaroid figure {
+#polaroid figure, .polaroid {
   float: left;
   position: relative;
   width: $cardWidth;
@@ -118,7 +118,7 @@ figcaption {
   }
 }
 
-#polaroid figcaption {
+#polaroid figcaption, #polaroid figcaption {
   text-align: left;
   font-family: "Open Sans", sans-serif;
   font-size: 0.8em;
@@ -139,7 +139,7 @@ figcaption {
   box-shadow: -4px -1px 8px -4px rgba(0, 0, 0, 0.75)
 }
 
-#polaroid figure .img{
+#polaroid figure .img, .polaroid .img{
     background-size:cover;
     background-position: center; 
     width: 100%;
@@ -157,3 +157,4 @@ figcaption {
     width: 80%;
     height: 100%;
 }
+

@@ -1,10 +1,25 @@
 
+$cardWidth: 25rem, 20rem, 14rem, 14rem, 14rem, 14rem;
+$cardHeight: 30rem, 22rem, 14rem, 14rem, 14rem, 14rem;
 $pinnedRotations: 3deg, -1deg, 8deg, -2deg, 1deg, -3deg; 
 $pinnedColor: #d8abab #eee #eee #aad383 #eee #eee;
+
+$tapeThicc: 2rem;
+$tapeColor: rgba(222, 220, 198, 0.95);
+$tapeLeft: 30%, 75%, -15%, 35%, 30%, 40%;
+$tapeTop: -5%, 0px, 0px, -8%, -5%, 2%;
+$tapeRotation: -1deg, 45deg, -22deg, 90deg, 10deg, 90deg;
+$tapeWidth: 30%, 40%, 63%, 27%, 40%, 30%;
 
 @for $i from 1 through length($pinnedRotations) {
     #aboutWall {
         .paper:nth-child(#{$i}) {
+
+            width: nth($cardWidth, $i);
+            height: nth($cardHeight, $i);
+            padding-top: 0%;
+            margin: 5%;
+
             -webkit-transform: rotate(nth($pinnedRotations, $i));
             -moz-transform: rotate(nth($pinnedRotations, $i));
             -o-transform: rotate(nth($pinnedRotations, $i));
@@ -12,6 +27,58 @@ $pinnedColor: #d8abab #eee #eee #aad383 #eee #eee;
             transform: rotate(nth($pinnedRotations, $i));
             background-color: nth($pinnedColor, $i);
             background-image: url("/img/beige-paper.png");
+
+
+            @media (max-aspect-ratio: 1/1){
+                margin: 10% 5% 10% 5%;
+            }
+        }
+
+        .paper:nth-child(#{$i}):before {
+            display: block;
+            position: absolute;
+            width: nth($tapeWidth, $i);
+            height: $tapeThicc;
+            background-color: $tapeColor;
+            background-image: url("/img/dust.png"); 
+            -webkit-transform: rotate(nth($tapeRotation, $i));
+            -moz-transform: rotate(nth($tapeRotation, $i));
+            -o-transform: rotate(nth($tapeRotation, $i));
+            -ms-transform: rotate(nth($tapeRotation, $i));
+
+            left: nth($tapeLeft, $i);
+            top: nth($tapeTop, $i);
+
+            @media (max-aspect-ratio: 1/1){
+            }
         }
     }
+}
+
+#aboutWall .polaroid {
+    width: 12rem;
+    height: 14rem;
+    padding-bottom: 1rem;
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+
+    figcaption {
+        font-size: 1rem;
+    }
+}
+
+#aboutWall .polaroid:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: $tapeThicc;
+    background-color: $tapeColor;
+    background-image: url("/img/dust.png"); 
+
+    left: 30%;
+    top: -5%
 }
