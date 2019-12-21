@@ -217,7 +217,7 @@
   top: -5%;
 }
 
-#aboutWall .paper p, #aboutWall .paper p b {
+#aboutWall .paper p, #aboutWall .paper p * {
   font-size: 1.25rem;
 }
 
@@ -258,5 +258,11 @@
   .mobile_hide {
     display: none;
   }
+}
+
+a {
+  font-family: 'Chilanka', cursive;
+  font-weight: bold;
+  text-decoration: none;
 }
 /*# sourceMappingURL=about.css.map */

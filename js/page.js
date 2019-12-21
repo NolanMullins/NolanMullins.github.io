@@ -160,7 +160,6 @@ $(document).ready(function() {
     });
 
     $grid.imagesLoaded().progress( function() {
-        console.log("Image loaded");
         $grid.masonry('layout');
     });
 

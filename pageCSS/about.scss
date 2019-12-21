@@ -83,7 +83,7 @@ $tapeWidth: 30%, 40%, 63%, 35%, 40%, 40%;
     top: -5%
 }
 
-#aboutWall .paper p, #aboutWall .paper p b {
+#aboutWall .paper p, #aboutWall .paper p * {
     font-size: 1.25rem;
 }
 
@@ -127,4 +127,10 @@ $extraRot: 38deg;
     @media (max-aspect-ratio: 1/1){
         display: none;
     }
+}
+
+a {
+    font-family: 'Chilanka', cursive; 
+    font-weight: bold;
+    text-decoration: none;
 }
