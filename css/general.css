@@ -10,6 +10,18 @@ html {
   }
 }
 
+@media (min-aspect-ratio: 4240 / 2390) {
+  html {
+    font-size: .8vw;
+  }
+}
+
+@media (min-aspect-ratio: 5500 / 2390) {
+  html {
+    font-size: .7vw;
+  }
+}
+
 body {
   margin: 0;
 }
