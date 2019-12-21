@@ -1,15 +1,15 @@
 
-$cardWidth: 25rem, 20rem, 14rem, 14rem, 14rem, 14rem;
-$cardHeight: 30rem, 22rem, 14rem, 14rem, 14rem, 14rem;
+$cardWidth: 25rem, 25rem, 14rem, 19rem, 20rem, 18rem;
+$cardHeight: 30rem, 28rem, 16rem, 20rem, 16rem, 20rem;
 $pinnedRotations: 3deg, -1deg, 8deg, 2deg, 1deg, -3deg; 
 $pinnedColor: #d8abab #eee #eee #aad383 #eee #eee;
 
 $tapeThicc: 2rem;
 $tapeColor: rgba(222, 220, 198, 0.95);
-$tapeLeft: 30%, 75%, -15%, 35%, 30%, 40%;
-$tapeTop: -5%, 0px, 0px, -8%, -5%, 2%;
-$tapeRotation: -1deg, 45deg, -22deg, 90deg, 10deg, 90deg;
-$tapeWidth: 30%, 40%, 63%, 27%, 40%, 30%;
+$tapeLeft: 30%, 75%, -15%, 20%, 10%, 40%;
+$tapeTop: -5%, 0px, 0px, -6%, -7%, -8%;
+$tapeRotation: -1deg, 45deg, -22deg, -2deg, -3deg, 2deg;
+$tapeWidth: 30%, 40%, 63%, 35%, 40%, 40%;
 
 @for $i from 1 through length($pinnedRotations) {
     #aboutWall {
@@ -81,4 +81,50 @@ $tapeWidth: 30%, 40%, 63%, 27%, 40%, 30%;
 
     left: 30%;
     top: -5%
+}
+
+#aboutWall .paper p, #aboutWall .paper p b {
+    font-size: 1.25rem;
+}
+
+.paper .note_title {
+    width: 100%; 
+    text-align: center; 
+    font-size: 2rem; 
+    font-family: 'Chilanka', cursive; 
+    margin-top: 1.5rem;
+}
+
+.paper .ds {
+    line-height: 2rem; 
+}
+
+.paper .cp {
+    text-align: center;
+}
+
+$extraRot: 38deg;
+.extra_tape:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 40%;
+    height: $tapeThicc;
+    background-color: $tapeColor;
+    background-image: url("/img/dust.png"); 
+    
+    transform: rotate($extraRot);
+    -webkit-transform: rotate($extraRot);
+    -moz-transform: rotate($extraRot);
+    -o-transform: rotate($extraRot);
+    -ms-transform: rotate($extraRot);
+
+    left: -12%;
+    top: 90%
+}
+
+.mobile_hide {
+    @media (max-aspect-ratio: 1/1){
+        display: none;
+    }
 }
